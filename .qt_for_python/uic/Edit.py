@@ -18,15 +18,38 @@ class Ui_MainWindow(object):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
         MainWindow.resize(971, 539)
-        MainWindow.setStyleSheet(u"\n"
-"\n"
-"QWidget\n"
+        MainWindow.setStyleSheet(u"QWidget\n"
 "{\n"
 "      color: rgb(74, 74, 111);\n"
 "	  background-color: rgb(168, 218, 220);\n"
 "    \n"
 "}\n"
-"")
+"QPushButton {\n"
+" font: bold;\n"
+"\n"
+" font-size:12px;\n"
+" line-height:1.2;\n"
+"  color: #f8f9fa;\n"
+"  justify-content: center;\n"
+"  align-items: center;\n"
+"  padding: 0 20px;\n"
+"  width: 100%;\n"
+"  height: 50px;\n"
+"  background-color: rgb(80, 80, 150);\n"
+"  border-radius: 10px;\n"
+"\n"
+"	\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"  background-color: rgb(74, 74, 125);\n"
+"  box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);\n"
+" \n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"   background-color: rgb(74, 74, 111);\n"
+"}")
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.lineEdit_6 = QLineEdit(self.centralwidget)
@@ -181,71 +204,16 @@ class Ui_MainWindow(object):
 "    border: 2px solid rgb(85, 170, 255);\n"
 "    background-color: rgb(241, 250, 238);\n"
 "}")
-        self.pushButton_2 = QPushButton(self.centralwidget)
-        self.pushButton_2.setObjectName(u"pushButton_2")
-        self.pushButton_2.setGeometry(QRect(840, 430, 81, 51))
-        self.pushButton_2.setStyleSheet(u"QPushButton {\n"
-" font: bold;\n"
-" font: 10pt \"Microsoft Sans Serif\";\n"
-" font-size:12px;\n"
-" line-height:1.2;\n"
-"  color: #f8f9fa;\n"
-" text-transform:uppercase;\n"
-"  justify-content: center;\n"
-"  align-items: center;\n"
-"  padding: 0 20px;\n"
-"  width: 100%;\n"
-"  height: 50px;\n"
-"  background-color: rgb(110, 20, 20);\n"
-"  border-radius: 10px;\n"
-"  box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);\n"
-"  transition: all 0.4s;\n"
-"	\n"
-"}\n"
-"\n"
-"QPushButton:hover {\n"
-"    background-color: rgb(74, 20, 20);\n"
-"  box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);\n"
-" \n"
-"}\n"
-"\n"
-"QPushButton:pressed {\n"
-"    background-color: rgb(110, 20, 20);\n"
-"}")
         self.pushButton_1 = QPushButton(self.centralwidget)
         self.pushButton_1.setObjectName(u"pushButton_1")
-        self.pushButton_1.setGeometry(QRect(710, 430, 81, 51))
-        self.pushButton_1.setStyleSheet(u"QPushButton {\n"
-" font: bold;\n"
-" font: 10pt \"Microsoft Sans Serif\";\n"
-" font-size:12px;\n"
-" line-height:1.2;\n"
-"  color: #f8f9fa;\n"
-" text-transform:uppercase;\n"
-"  justify-content: center;\n"
-"  align-items: center;\n"
-"  padding: 0 20px;\n"
-"  width: 100%;\n"
-"  height: 50px;\n"
-"  background-color: rgb(80, 80, 150);\n"
-"  border-radius: 10px;\n"
-"\n"
-"	\n"
-"}\n"
-"\n"
-"QPushButton:hover {\n"
-"  background-color: rgb(74, 74, 125);\n"
-"  box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);\n"
-" \n"
-"}\n"
-"\n"
-"QPushButton:pressed {\n"
-"   background-color: rgb(74, 74, 111);\n"
-"}")
+        self.pushButton_1.setGeometry(QRect(750, 420, 141, 51))
+        self.pushButton_1.setStyleSheet(u"")
         self.label = QLabel(self.centralwidget)
         self.label.setObjectName(u"label")
         self.label.setGeometry(QRect(350, 0, 421, 61))
         font2 = QFont()
+        font2.setBold(True)
+        font2.setWeight(75)
         self.label.setFont(font2)
         self.label.setCursor(QCursor(Qt.PointingHandCursor))
         self.label.setStyleSheet(u" font-size:25px;\n"
@@ -270,68 +238,19 @@ class Ui_MainWindow(object):
         self.pushButton_3 = QPushButton(self.centralwidget)
         self.pushButton_3.setObjectName(u"pushButton_3")
         self.pushButton_3.setGeometry(QRect(430, 310, 91, 51))
-        self.pushButton_3.setStyleSheet(u"QPushButton {\n"
-" font: bold;\n"
-" font: 10pt \"Microsoft Sans Serif\";\n"
-" font-size:12px;\n"
-" line-height:1.2;\n"
-"  color: #f8f9fa;\n"
-" text-transform:uppercase;\n"
-"  justify-content: center;\n"
-"  align-items: center;\n"
-"  padding: 0 20px;\n"
-"  width: 100%;\n"
-"  height: 50px;\n"
-"  background-color: rgb(80, 80, 150);\n"
-"  border-radius: 10px;\n"
-"\n"
-"	\n"
-"}\n"
-"\n"
-"QPushButton:hover {\n"
-"  background-color: rgb(74, 74, 125);\n"
-"  box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);\n"
-" \n"
-"}\n"
-"\n"
-"QPushButton:pressed {\n"
-"   background-color: rgb(74, 74, 111);\n"
-"}")
+        self.pushButton_3.setStyleSheet(u"")
         self.pushButton_4 = QPushButton(self.centralwidget)
         self.pushButton_4.setObjectName(u"pushButton_4")
         self.pushButton_4.setGeometry(QRect(570, 310, 91, 51))
-        self.pushButton_4.setStyleSheet(u"QPushButton {\n"
-" font: bold;\n"
-" font: 10pt \"Microsoft Sans Serif\";\n"
-" font-size:12px;\n"
-" line-height:1.2;\n"
-"  color: #f8f9fa;\n"
-" text-transform:uppercase;\n"
-"  justify-content: center;\n"
-"  align-items: center;\n"
-"  padding: 0 20px;\n"
-"  width: 100%;\n"
-"  height: 50px;\n"
-"  background-color: rgb(110, 20, 20);\n"
-"  border-radius: 10px;\n"
-"  box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);\n"
-"  transition: all 0.4s;\n"
-"	\n"
-"}\n"
-"\n"
-"QPushButton:hover {\n"
-"    background-color: rgb(74, 20, 20);\n"
-"  box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);\n"
-" \n"
-"}\n"
-"\n"
-"QPushButton:pressed {\n"
-"    background-color: rgb(110, 20, 20);\n"
-"}")
+        self.pushButton_4.setStyleSheet(u"")
         self.label_2 = QLabel(self.centralwidget)
         self.label_2.setObjectName(u"label_2")
-        self.label_2.setGeometry(QRect(710, 40, 221, 21))
-        self.label_2.setFont(font)
+        self.label_2.setGeometry(QRect(680, 40, 281, 21))
+        font3 = QFont()
+        font3.setPointSize(9)
+        font3.setBold(True)
+        font3.setWeight(75)
+        self.label_2.setFont(font3)
         self.label_2.setStyleSheet(u"color:rgb(110, 20, 20);")
         self.label_2.setTextFormat(Qt.PlainText)
         self.label_2.setAlignment(Qt.AlignCenter)
@@ -361,12 +280,12 @@ class Ui_MainWindow(object):
         self.label_9.setText("")
         self.lineEdit_5.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Email", None))
         self.lineEdit_2.setPlaceholderText(QCoreApplication.translate("MainWindow", u"First Name", None))
-        self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"ok", None))
         self.pushButton_1.setText(QCoreApplication.translate("MainWindow", u"Edit", None))
-        self.label.setText(QCoreApplication.translate("MainWindow", u"Mood Priditon ", None))
+        self.label.setText(QCoreApplication.translate("MainWindow", u"Mood Prediction\n"
+"", None))
         self.labelimg.setText("")
         self.pushButton_3.setText(QCoreApplication.translate("MainWindow", u"Add", None))
-        self.pushButton_4.setText(QCoreApplication.translate("MainWindow", u"delete", None))
+        self.pushButton_4.setText(QCoreApplication.translate("MainWindow", u"Delete", None))
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"Error !", None))
     # retranslateUi
 

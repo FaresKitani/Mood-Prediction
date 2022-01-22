@@ -58,7 +58,7 @@ class Main2(QMainWindow, editUI):
         ######## DB
 
         self.pushButton_1.clicked.connect(self.Edit_but)
-        self.pushButton_2.clicked.connect(self.exit_but)
+        #self.pushButton_2.clicked.connect(self.exit_but)
 
         self.pushButton_3.clicked.connect(self.addimg)
         self.pushButton_4.clicked.connect(self.deleteimg)
@@ -83,8 +83,10 @@ class Main2(QMainWindow, editUI):
 
 
     def set_data(self,the_username):
+
         
-        if(the_username != ""):
+        
+        if(len(the_username) > 3):
 
             try:
                 # connect to database
@@ -153,10 +155,44 @@ class Main2(QMainWindow, editUI):
 
         global img
         image= img
+        msg="!"
+        #x  = self.password_check(self,password)
+        ######################
 
+                    
+        SpecialSym =['$', '@', '#', '%','+','-','*','/','!','^','!','&']
+        val = True
+        #msg=my_msg
+        msg = "Password Edite successfully"
+        if len(password) < 8:
+            msg='length should be at least 8'
+            val = False
+            
+        if len(password) > 20:
+            msg='length should be not be greater than 20'
+            val = False
+            
+        if not any(char.isdigit() for char in password):
+            msg='Password should have at least one numeral'
+            val = False
+            
+        if not any(char.isupper() for char in password):
+            msg='Password should have at least one uppercase letter'
+            val = False
+            
+        if not any(char.islower() for char in password):
+            msg='Password should have at least one lowercase letter'
+            val = False
+            
+        if not any(char in SpecialSym for char in password):
+            msg='Password should have at least one of the symbols +-*/!^&$@#'
+            val = False
+        #if val:
+        #    return val
+        
 
-        if(user_name != ""):
-            if(password == password_2):
+        if(len(user_name) > 3):
+            if(password == password_2 and val):
                     
 
                 try:
@@ -211,18 +247,18 @@ class Main2(QMainWindow, editUI):
                         print(" Connected to Database is Closed ")
 
             else:
-                self.label_2.setText("password !")
+                self.label_2.setText(msg+"!")
                 self.label_2.show()
         else:
-                self.label_2.setText("user name is empty !")
+                self.label_2.setText("UserName length should be at least 4!")
                 self.label_2.show()
 
 
     
-    def exit_but(self):
+    #def exit_but(self):
         #app.exec_()
         #sys.exit(self.window)
-        sys.exit("Thanks")
+    #    sys.exit("Thanks")
 
     def addimg(self):
         save_location = QFileDialog.getSaveFileName(self , caption="Save as" , directory="." , filter="All Files(*.*)")
@@ -242,19 +278,6 @@ class Main2(QMainWindow, editUI):
         a="img/user-grean.png"
         img = QPixmap(a)
         self.labelimg.setPixmap(img)
-
-
-
-
-
-
-
-    ##############################################################################################
-    ###########
-
-
-
-
 
     ###############################################################################################
 

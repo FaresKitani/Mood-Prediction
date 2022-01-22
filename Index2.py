@@ -51,7 +51,7 @@ class Main2(QMainWindow, sinUI):
         self.MyDB()
 
         self.pushButton_1.clicked.connect(self.save_but)
-        self.pushButton_2.clicked.connect(self.exit_but)
+        #self.pushButton_2.clicked.connect(self.exit_but)
 
         self.pushButton_3.clicked.connect(self.addimg)
         self.pushButton_4.clicked.connect(self.deleteimg)
@@ -68,6 +68,38 @@ class Main2(QMainWindow, sinUI):
         self.w.show()
         self.showMinimized()
         print("hi11")
+
+    ######################################################## password
+    def password_check(passwd):
+            
+        SpecialSym =['$', '@', '#', '%','+','-','*','/','!','^','!','&']
+        val = True
+        msg = "Password created successfully"
+        if len(passwd) < 8:
+            msg='length should be at least 8'
+            val = False
+            
+        if len(passwd) > 20:
+            msg='length should be not be greater than 20'
+            val = False
+            
+        if not any(char.isdigit() for char in passwd):
+            msg='Password should have at least one numeral'
+            val = False
+            
+        if not any(char.isupper() for char in passwd):
+            msg='Password should have at least one uppercase letter'
+            val = False
+            
+        if not any(char.islower() for char in passwd):
+            msg='Password should have at least one lowercase letter'
+            val = False
+            
+        if not any(char in SpecialSym for char in passwd):
+            msg='Password should have at least one of the symbols +-*/!^&$@#'
+            val = False
+        if val:
+            return val , msg
 
 
     def save_but(self):
@@ -89,9 +121,37 @@ class Main2(QMainWindow, sinUI):
         global img
         image= img
 
+                   
+        SpecialSym =['$', '@', '#', '%','+','-','*','/','!','^','!','&']
+        val = True
+        #msg=my_msg
+        msg = "Password Edite successfully"
+        if len(password) < 8:
+            msg='length should be at least 8'
+            val = False
+            
+        if len(password) > 20:
+            msg='length should be not be greater than 20'
+            val = False
+            
+        if not any(char.isdigit() for char in password):
+            msg='Password should have at least one numeral'
+            val = False
+            
+        if not any(char.isupper() for char in password):
+            msg='Password should have at least one uppercase letter'
+            val = False
+            
+        if not any(char.islower() for char in password):
+            msg='Password should have at least one lowercase letter'
+            val = False
+            
+        if not any(char in SpecialSym for char in password):
+            msg='Password should have at least one of the symbols +-*/!^&$@#'
+            val = False
 
-        if(user_name != ""):
-            if(password == password_2):
+        if(len(user_name) > 3):
+            if(password == password_2 and val):
                     
 
                 try:
@@ -144,18 +204,16 @@ class Main2(QMainWindow, sinUI):
                         print(" Connected to Database is Closed ")
 
             else:
-                self.label_2.setText("password !")
+                self.label_2.setText(msg+"!")
                 self.label_2.show()
         else:
-                self.label_2.setText("user name is empty !")
+                self.label_2.setText("UserName length should be at least 4!")
                 self.label_2.show()
 
 
     
-    def exit_but(self):
-
-
-        sys.exit(self.window)
+    #def exit_but(self):
+    #    sys.exit(self.window)
         #sys.exit("Thanks")
 
     def addimg(self):

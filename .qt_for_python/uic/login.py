@@ -23,7 +23,37 @@ class Ui_MainWindow(object):
         icon = QIcon()
         icon.addFile(u"image/login.png", QSize(), QIcon.Normal, QIcon.Off)
         MainWindow.setWindowIcon(icon)
-        MainWindow.setStyleSheet(u"background-color: rgb(168, 218, 220);")
+        MainWindow.setStyleSheet(u"QWidget\n"
+"{\n"
+"      color: rgb(74, 74, 111);\n"
+"	  background-color: rgb(168, 218, 220);\n"
+"    \n"
+"}\n"
+"QPushButton {\n"
+" font: bold;\n"
+" font-size:12px;\n"
+" line-height:1.2;\n"
+"  color: #f8f9fa;\n"
+"  justify-content: center;\n"
+"  align-items: center;\n"
+"  padding: 0 20px;\n"
+"  width: 100%;\n"
+"  height: 50px;\n"
+"  background-color: rgb(80, 80, 150);\n"
+"  border-radius: 10px;\n"
+"\n"
+"	\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"  background-color: rgb(74, 74, 125);\n"
+"  box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);\n"
+" \n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"   background-color: rgb(74, 74, 111);\n"
+"}")
         MainWindow.setDocumentMode(False)
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
@@ -101,34 +131,7 @@ class Ui_MainWindow(object):
         self.Login_But = QPushButton(self.centralwidget)
         self.Login_But.setObjectName(u"Login_But")
         self.Login_But.setGeometry(QRect(400, 260, 141, 25))
-        self.Login_But.setStyleSheet(u"QPushButton {\n"
-" font: bold;\n"
-" font: 10pt \"Microsoft Sans Serif\";\n"
-" font-size:12px;\n"
-" line-height:1.2;\n"
-"  color: #f8f9fa;\n"
-" text-transform:uppercase;\n"
-"  justify-content: center;\n"
-"  align-items: center;\n"
-"  padding: 0 20px;\n"
-"  width: 100%;\n"
-"  height: 50px;\n"
-"  background-color: rgb(80, 80, 150);\n"
-"  border-radius: 10px;\n"
-"  box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);\n"
-"  transition: all 0.4s;\n"
-"	\n"
-"}\n"
-"\n"
-"QPushButton:hover {\n"
-"  background-color: rgb(74, 74, 125);\n"
-"  box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);\n"
-" \n"
-"}\n"
-"\n"
-"QPushButton:pressed {\n"
-"   background-color: rgb(74, 74, 111);\n"
-"}")
+        self.Login_But.setStyleSheet(u"")
         self.Login_But.setCheckable(False)
         self.Login_But.setChecked(False)
         self.Login_But.setAutoRepeat(False)
@@ -140,7 +143,7 @@ class Ui_MainWindow(object):
 "border-image: url(img/logo_mood.png);")
         self.label = QLabel(self.centralwidget)
         self.label.setObjectName(u"label")
-        self.label.setGeometry(QRect(340, 30, 281, 61))
+        self.label.setGeometry(QRect(340, 40, 281, 51))
         font1 = QFont()
         self.label.setFont(font1)
         self.label.setCursor(QCursor(Qt.PointingHandCursor))
@@ -156,34 +159,7 @@ class Ui_MainWindow(object):
         self.signin_But = QPushButton(self.centralwidget)
         self.signin_But.setObjectName(u"signin_But")
         self.signin_But.setGeometry(QRect(400, 310, 141, 25))
-        self.signin_But.setStyleSheet(u"QPushButton {\n"
-" font: bold;\n"
-" font: 10pt \"Microsoft Sans Serif\";\n"
-" font-size:12px;\n"
-" line-height:1.2;\n"
-"  color: #f8f9fa;\n"
-" text-transform:uppercase;\n"
-"  justify-content: center;\n"
-"  align-items: center;\n"
-"  padding: 0 20px;\n"
-"  width: 100%;\n"
-"  height: 50px;\n"
-"  background-color: rgb(80, 80, 150);\n"
-"  border-radius: 10px;\n"
-"  box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);\n"
-"  transition: all 0.4s;\n"
-"	\n"
-"}\n"
-"\n"
-"QPushButton:hover {\n"
-"  background-color: rgb(74, 74, 125);\n"
-"  box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);\n"
-" \n"
-"}\n"
-"\n"
-"QPushButton:pressed {\n"
-"   background-color: rgb(74, 74, 111);\n"
-"}")
+        self.signin_But.setStyleSheet(u"")
         self.signin_But.setCheckable(False)
         self.signin_But.setChecked(False)
         self.signin_But.setAutoRepeat(False)
@@ -191,11 +167,7 @@ class Ui_MainWindow(object):
         self.label_2 = QLabel(self.centralwidget)
         self.label_2.setObjectName(u"label_2")
         self.label_2.setGeometry(QRect(380, 160, 201, 20))
-        font2 = QFont()
-        font2.setFamily(u"Poppins-Medium,sans-serif")
-        font2.setBold(False)
-        font2.setWeight(50)
-        self.label_2.setFont(font2)
+        self.label_2.setFont(font)
         self.label_2.setStyleSheet(u"color:rgb(222, 62, 8);\n"
 "font-family:'Poppins-Medium', sans-serif;\n"
 "font-size: 14px;")
@@ -220,10 +192,11 @@ class Ui_MainWindow(object):
         self.user_text.setText("")
         self.user_text.setPlaceholderText(QCoreApplication.translate("MainWindow", u" User Name", None))
         self.password_text.setPlaceholderText(QCoreApplication.translate("MainWindow", u" Password", None))
-        self.Login_But.setText(QCoreApplication.translate("MainWindow", u"Login", None))
+        self.Login_But.setText(QCoreApplication.translate("MainWindow", u"Log In", None))
         self.labelaccount.setText("")
-        self.label.setText(QCoreApplication.translate("MainWindow", u"Priditon Of Mood", None))
-        self.signin_But.setText(QCoreApplication.translate("MainWindow", u"sign in", None))
+        self.label.setText(QCoreApplication.translate("MainWindow", u"Mood Prediction\n"
+"", None))
+        self.signin_But.setText(QCoreApplication.translate("MainWindow", u"Sign In", None))
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"Oops! ,Username Not Found.", None))
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
     # retranslateUi
