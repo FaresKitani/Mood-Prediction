@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1278</width>
-    <height>854</height>
+    <width>1391</width>
+    <height>851</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -557,8 +557,8 @@ QAbstractSpinBox {
    <widget class="QPushButton" name="ExiteButton">
     <property name="geometry">
      <rect>
-      <x>1130</x>
-      <y>750</y>
+      <x>1240</x>
+      <y>720</y>
       <width>142</width>
       <height>45</height>
      </rect>
@@ -569,7 +569,6 @@ QAbstractSpinBox {
  font-size:12px;
  line-height:1.2;
   color: #f8f9fa;
- text-transform:uppercase;
   justify-content: center;
   align-items: center;
   padding: 0 20px;
@@ -613,8 +612,8 @@ QPushButton:pressed {
    <widget class="QLabel" name="label_Edit">
     <property name="geometry">
      <rect>
-      <x>1120</x>
-      <y>110</y>
+      <x>1240</x>
+      <y>120</y>
       <width>161</width>
       <height>41</height>
      </rect>
@@ -651,7 +650,6 @@ QPushButton:pressed {
  font-size:12px;
  line-height:1.2;
   color: #f8f9fa;
- text-transform:uppercase;
   justify-content: center;
   align-items: center;
   padding: 0 20px;
@@ -676,7 +674,7 @@ QPushButton:pressed {
 </string>
     </property>
     <property name="text">
-     <string>ADD</string>
+     <string>Add</string>
     </property>
    </widget>
    <widget class="QPushButton" name="deletButton">
@@ -697,7 +695,6 @@ QPushButton:pressed {
  font-size:12px;
  line-height:1.2;
   color: #f8f9fa;
- text-transform:uppercase;
   justify-content: center;
   align-items: center;
   padding: 0 20px;
@@ -718,7 +715,8 @@ QPushButton:hover {
 
 QPushButton:pressed {
    background-color: rgb(74, 74, 111);
-}</string>
+}
+</string>
     </property>
     <property name="text">
      <string>Delete</string>
@@ -859,7 +857,6 @@ padding: 15px;</string>
  font-size:12px;
  line-height:1.2;
   color: #f8f9fa;
- text-transform:uppercase;
   justify-content: center;
   align-items: center;
   padding: 0 20px;
@@ -914,28 +911,32 @@ QPushButton:pressed {
  font-size:12px;
  line-height:1.2;
   color: #f8f9fa;
- text-transform:uppercase;
   justify-content: center;
   align-items: center;
   padding: 0 20px;
   width: 100%;
   height: 50px;
-  background-color: rgb(80, 80, 150);
+  background-color: rgb(0,102,0);
   border-radius: 10px;
   box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);
   transition: all 0.4s;
+   background-image: url(img/Standar/ddd1.png);
+    background-repeat: no-repeat;
+    background-position: left; 
+  
 	
 }
 
 QPushButton:hover {
-  background-color: rgb(74, 74, 125);
+    background-color: rgb(0,153,51);
   box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
  
 }
 
 QPushButton:pressed {
-   background-color: rgb(74, 74, 111);
-}</string>
+    background-color: rgb(51,153,0);
+}
+</string>
     </property>
     <property name="text">
      <string>multi-face
@@ -966,13 +967,12 @@ QPushButton:pressed {
  font-size:12px;
  line-height:1.2;
   color: #f8f9fa;
- text-transform:uppercase;
   justify-content: center;
   align-items: center;
   padding: 0 20px;
   width: 100%;
   height: 50px;
-  background-color: rgb(110, 20, 20);
+  background-color: rgb(80, 80, 150);
   border-radius: 10px;
   box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);
   transition: all 0.4s;
@@ -980,13 +980,13 @@ QPushButton:pressed {
 }
 
 QPushButton:hover {
-    background-color: rgb(74, 20, 20);
+  background-color: rgb(74, 74, 125);
   box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
  
 }
 
 QPushButton:pressed {
-    background-color: rgb(110, 20, 20);
+   background-color: rgb(74, 74, 111);
 }
 </string>
     </property>
@@ -1000,7 +1000,7 @@ QPushButton:pressed {
       <x>800</x>
       <y>630</y>
       <width>451</width>
-      <height>111</height>
+      <height>81</height>
      </rect>
     </property>
     <property name="font">
@@ -1041,28 +1041,32 @@ QPushButton:pressed {
  font-size:12px;
  line-height:1.2;
   color: #f8f9fa;
- text-transform:uppercase;
   justify-content: center;
   align-items: center;
   padding: 0 20px;
   width: 100%;
   height: 50px;
-  background-color: rgb(80, 80, 150);
+  background-color: rgb(0,102,0);
   border-radius: 10px;
   box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);
   transition: all 0.4s;
+   background-image: url(img/Standar/ddd1.png);
+    background-repeat: no-repeat;
+    background-position: left; 
+  
 	
 }
 
 QPushButton:hover {
-  background-color: rgb(74, 74, 125);
+    background-color: rgb(0,153,51);
   box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
  
 }
 
 QPushButton:pressed {
-   background-color: rgb(74, 74, 111);
-}</string>
+    background-color: rgb(51,153,0);
+}
+</string>
     </property>
     <property name="text">
      <string> single face
@@ -1090,32 +1094,35 @@ QPushButton:pressed {
     <property name="styleSheet">
      <string notr="true">QPushButton {
  font: bold;
- 
  font-size:12px;
  line-height:1.2;
   color: #f8f9fa;
- text-transform:uppercase;
   justify-content: center;
   align-items: center;
   padding: 0 20px;
   width: 100%;
   height: 50px;
-  background-color: rgb(80, 80, 150);
+  background-color: rgb(0,102,0);
   border-radius: 10px;
   box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);
   transition: all 0.4s;
+   background-image: url(img/Standar/ddd1.png);
+    background-repeat: no-repeat;
+    background-position: left; 
+  
 	
 }
 
 QPushButton:hover {
-  background-color: rgb(74, 74, 125);
+    background-color: rgb(0,153,51);
   box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
  
 }
 
 QPushButton:pressed {
-   background-color: rgb(74, 74, 111);
-}</string>
+    background-color: rgb(51,153,0);
+}
+</string>
     </property>
     <property name="text">
      <string>prediction </string>
@@ -1145,28 +1152,32 @@ QPushButton:pressed {
  font-size:12px;
  line-height:1.2;
   color: #f8f9fa;
- text-transform:uppercase;
   justify-content: center;
   align-items: center;
   padding: 0 20px;
   width: 100%;
   height: 50px;
-  background-color: rgb(80, 80, 150);
+  background-color: rgb(0,102,0);
   border-radius: 10px;
   box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);
   transition: all 0.4s;
+   background-image: url(img/Standar/ddd1.png);
+    background-repeat: no-repeat;
+    background-position: left; 
+  
 	
 }
 
 QPushButton:hover {
-  background-color: rgb(74, 74, 125);
+    background-color: rgb(0,153,51);
   box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
  
 }
 
 QPushButton:pressed {
-   background-color: rgb(74, 74, 111);
-}</string>
+    background-color: rgb(51,153,0);
+}
+</string>
     </property>
     <property name="text">
      <string>ADD</string>
@@ -1187,14 +1198,14 @@ QPushButton:pressed {
     <property name="styleSheet">
      <string notr="true">font: bold;
  font-size:12px;
+ line-height:1.2;
   color: #f8f9fa;
- text-transform:uppercase;
   justify-content: center;
   align-items: center;
-  padding: 0 10px;
+  padding: 0 20px;
   width: 100%;
   height: 50px;
-  background-color: rgb(80, 80, 150);
+  background-color: rgb(0,102,0);
   border-radius: 10px;</string>
     </property>
     <item>
@@ -1262,28 +1273,32 @@ QPushButton:pressed {
  font-size:12px;
  line-height:1.2;
   color: #f8f9fa;
- text-transform:uppercase;
   justify-content: center;
   align-items: center;
   padding: 0 20px;
   width: 100%;
   height: 50px;
-  background-color: rgb(80, 80, 150);
+  background-color: rgb(0,102,0);
   border-radius: 10px;
   box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);
   transition: all 0.4s;
+   background-image: url(img/Standar/ddd1.png);
+    background-repeat: no-repeat;
+    background-position: left; 
+  
 	
 }
 
 QPushButton:hover {
-  background-color: rgb(74, 74, 125);
+    background-color: rgb(0,153,51);
   box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
  
 }
 
 QPushButton:pressed {
-   background-color: rgb(74, 74, 111);
-}</string>
+    background-color: rgb(51,153,0);
+}
+</string>
     </property>
     <property name="text">
      <string>prediction </string>
@@ -1313,28 +1328,32 @@ QPushButton:pressed {
  font-size:12px;
  line-height:1.2;
   color: #f8f9fa;
- text-transform:uppercase;
   justify-content: center;
   align-items: center;
   padding: 0 20px;
   width: 100%;
   height: 50px;
-  background-color: rgb(80, 80, 150);
+  background-color: rgb(0,102,0);
   border-radius: 10px;
   box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);
   transition: all 0.4s;
+   background-image: url(img/Standar/ddd1.png);
+    background-repeat: no-repeat;
+    background-position: left; 
+  
 	
 }
 
 QPushButton:hover {
-  background-color: rgb(74, 74, 125);
+    background-color: rgb(0,153,51);
   box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
  
 }
 
 QPushButton:pressed {
-   background-color: rgb(74, 74, 111);
-}</string>
+    background-color: rgb(51,153,0);
+}
+</string>
     </property>
     <property name="text">
      <string>ADD</string>
@@ -1364,28 +1383,32 @@ QPushButton:pressed {
  font-size:12px;
  line-height:1.2;
   color: #f8f9fa;
- text-transform:uppercase;
   justify-content: center;
   align-items: center;
   padding: 0 20px;
   width: 100%;
   height: 50px;
-  background-color: rgb(80, 80, 150);
+  background-color: rgb(0,102,0);
   border-radius: 10px;
   box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);
   transition: all 0.4s;
+   background-image: url(img/Standar/ddd1.png);
+    background-repeat: no-repeat;
+    background-position: left; 
+  
 	
 }
 
 QPushButton:hover {
-  background-color: rgb(74, 74, 125);
+    background-color: rgb(0,153,51);
   box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
  
 }
 
 QPushButton:pressed {
-   background-color: rgb(74, 74, 111);
-}</string>
+    background-color: rgb(51,153,0);
+}
+</string>
     </property>
     <property name="text">
      <string>ADD</string>
@@ -1415,28 +1438,32 @@ QPushButton:pressed {
  font-size:12px;
  line-height:1.2;
   color: #f8f9fa;
- text-transform:uppercase;
   justify-content: center;
   align-items: center;
   padding: 0 20px;
   width: 100%;
   height: 50px;
-  background-color: rgb(80, 80, 150);
+  background-color: rgb(0,102,0);
   border-radius: 10px;
   box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);
   transition: all 0.4s;
+   background-image: url(img/Standar/ddd1.png);
+    background-repeat: no-repeat;
+    background-position: left; 
+  
 	
 }
 
 QPushButton:hover {
-  background-color: rgb(74, 74, 125);
+    background-color: rgb(0,153,51);
   box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
  
 }
 
 QPushButton:pressed {
-   background-color: rgb(74, 74, 111);
-}</string>
+    background-color: rgb(51,153,0);
+}
+</string>
     </property>
     <property name="text">
      <string>prediction </string>
@@ -1460,31 +1487,26 @@ QPushButton:pressed {
  font-size:12px;
  line-height:1.2;
   color: #f8f9fa;
- text-transform:uppercase;
   justify-content: center;
   align-items: center;
   padding: 0 20px;
   width: 100%;
   height: 50px;
-  background-color: rgb(110, 20, 20);
+  background-color: rgb(80, 80, 150);
   border-radius: 10px;
   box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);
   transition: all 0.4s;
-   background-image: url(img/Standar/ddd1.png);
-    background-repeat: no-repeat;
-    background-position: left; 
-  
 	
 }
 
 QPushButton:hover {
-    background-color: rgb(74, 20, 20);
+  background-color: rgb(74, 74, 125);
   box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
  
 }
 
 QPushButton:pressed {
-    background-color: rgb(110, 20, 20);
+   background-color: rgb(74, 74, 111);
 }
 </string>
     </property>
@@ -1519,13 +1541,12 @@ QPushButton:pressed {
  font-size:12px;
  line-height:1.2;
   color: #f8f9fa;
- text-transform:uppercase;
   justify-content: center;
   align-items: center;
   padding: 0 20px;
   width: 100%;
   height: 50px;
-  background-color: rgb(110, 20, 20);
+  background-color: rgb(80, 80, 150);
   border-radius: 10px;
   box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);
   transition: all 0.4s;
@@ -1533,13 +1554,13 @@ QPushButton:pressed {
 }
 
 QPushButton:hover {
-    background-color: rgb(74, 20, 20);
+  background-color: rgb(74, 74, 125);
   box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
  
 }
 
 QPushButton:pressed {
-    background-color: rgb(110, 20, 20);
+   background-color: rgb(74, 74, 111);
 }
 </string>
     </property>
@@ -1562,13 +1583,12 @@ QPushButton:pressed {
  font-size:12px;
  line-height:1.2;
   color: #f8f9fa;
- text-transform:uppercase;
   justify-content: center;
   align-items: center;
   padding: 0 20px;
   width: 100%;
   height: 50px;
-  background-color: rgb(110, 20, 20);
+  background-color: rgb(80, 80, 150);
   border-radius: 10px;
   box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);
   transition: all 0.4s;
@@ -1576,13 +1596,13 @@ QPushButton:pressed {
 }
 
 QPushButton:hover {
-    background-color: rgb(74, 20, 20);
+  background-color: rgb(74, 74, 125);
   box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
  
 }
 
 QPushButton:pressed {
-    background-color: rgb(110, 20, 20);
+   background-color: rgb(74, 74, 111);
 }
 </string>
     </property>
@@ -1605,13 +1625,12 @@ QPushButton:pressed {
  font-size:12px;
  line-height:1.2;
   color: #f8f9fa;
- text-transform:uppercase;
   justify-content: center;
   align-items: center;
   padding: 0 20px;
   width: 100%;
   height: 50px;
-  background-color: rgb(110, 20, 20);
+  background-color: rgb(80, 80, 150);
   border-radius: 10px;
   box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);
   transition: all 0.4s;
@@ -1619,13 +1638,13 @@ QPushButton:pressed {
 }
 
 QPushButton:hover {
-    background-color: rgb(74, 20, 20);
+  background-color: rgb(74, 74, 125);
   box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
  
 }
 
 QPushButton:pressed {
-    background-color: rgb(110, 20, 20);
+   background-color: rgb(74, 74, 111);
 }
 </string>
     </property>
@@ -1716,13 +1735,12 @@ border-radius: 20px;
  font-size:12px;
  line-height:1.2;
   color: #f8f9fa;
- text-transform:uppercase;
   justify-content: center;
   align-items: center;
   padding: 0 20px;
   width: 100%;
   height: 50px;
-  background-color: rgb(110, 20, 20);
+  background-color: rgb(80, 80, 150);
   border-radius: 10px;
   box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);
   transition: all 0.4s;
@@ -1730,13 +1748,13 @@ border-radius: 20px;
 }
 
 QPushButton:hover {
-    background-color: rgb(74, 20, 20);
+  background-color: rgb(74, 74, 125);
   box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
  
 }
 
 QPushButton:pressed {
-    background-color: rgb(110, 20, 20);
+   background-color: rgb(74, 74, 111);
 }
 </string>
     </property>
@@ -1768,28 +1786,32 @@ QPushButton:pressed {
  font-size:12px;
  line-height:1.2;
   color: #f8f9fa;
- text-transform:uppercase;
   justify-content: center;
   align-items: center;
   padding: 0 20px;
   width: 100%;
   height: 50px;
-  background-color: rgb(80, 80, 150);
+  background-color: rgb(0,102,0);
   border-radius: 10px;
   box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);
   transition: all 0.4s;
+   background-image: url(img/Standar/ddd1.png);
+    background-repeat: no-repeat;
+    background-position: left; 
+  
 	
 }
 
 QPushButton:hover {
-  background-color: rgb(74, 74, 125);
+    background-color: rgb(0,153,51);
   box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
  
 }
 
 QPushButton:pressed {
-   background-color: rgb(74, 74, 111);
-}</string>
+    background-color: rgb(51,153,0);
+}
+</string>
     </property>
     <property name="text">
      <string>ADD</string>
@@ -1840,28 +1862,32 @@ QPushButton:pressed {
  font-size:12px;
  line-height:1.2;
   color: #f8f9fa;
- text-transform:uppercase;
   justify-content: center;
   align-items: center;
   padding: 0 20px;
   width: 100%;
   height: 50px;
-  background-color: rgb(80, 80, 150);
+  background-color: rgb(0,102,0);
   border-radius: 10px;
   box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);
   transition: all 0.4s;
+   background-image: url(img/Standar/ddd1.png);
+    background-repeat: no-repeat;
+    background-position: left; 
+  
 	
 }
 
 QPushButton:hover {
-  background-color: rgb(74, 74, 125);
+    background-color: rgb(0,153,51);
   box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
  
 }
 
 QPushButton:pressed {
-   background-color: rgb(74, 74, 111);
-}</string>
+    background-color: rgb(51,153,0);
+}
+</string>
     </property>
     <property name="text">
      <string>prediction </string>
@@ -1870,7 +1896,7 @@ QPushButton:pressed {
    <widget class="QPushButton" name="pushButton_Edit">
     <property name="geometry">
      <rect>
-      <x>1150</x>
+      <x>1260</x>
       <y>0</y>
       <width>111</width>
       <height>111</height>
@@ -1956,7 +1982,7 @@ QPushButton:pressed {
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1278</width>
+     <width>1391</width>
      <height>26</height>
     </rect>
    </property>

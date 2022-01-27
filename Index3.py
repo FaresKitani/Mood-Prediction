@@ -42,9 +42,9 @@ class Main2(QMainWindow, editUI):
     global img
     img= "img/user-grean.png"
     global my_id
-    my_id=7
+    my_id=15
     global new_data
-    new_data="User_f4"
+    new_data="F@res"
 
 
     def __init__(self, parent=None):
@@ -53,6 +53,7 @@ class Main2(QMainWindow, editUI):
         self.setupUi(self)
         
         name=new_data
+
         self.set_data(name)
 
         ######## DB
@@ -78,7 +79,7 @@ class Main2(QMainWindow, editUI):
     def get_data(self,data):
         global new_data
         new_data=data
-        return(new_data)
+        return()
 
 
 

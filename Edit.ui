@@ -306,7 +306,33 @@ QLineEdit:focus{
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true"/>
+     <string notr="true">QPushButton {
+ font: bold;
+ font-size:12px;
+ line-height:1.2;
+  color: #f8f9fa;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(110, 20, 20);
+  border-radius: 10px;
+  box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);
+  transition: all 0.4s;
+	
+}
+
+QPushButton:hover {
+    background-color: rgb(74, 20, 20);
+  box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
+ 
+}
+
+QPushButton:pressed {
+    background-color: rgb(110, 20, 20);
+}
+</string>
     </property>
     <property name="text">
      <string>Edit</string>
@@ -324,8 +350,6 @@ QLineEdit:focus{
     <property name="font">
      <font>
       <pointsize>-1</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
      </font>
     </property>
     <property name="cursor">
@@ -366,7 +390,7 @@ QLineEdit:focus{
 
 border: 4px solid #4A4A6F;
 border-radius: 20px;
-padding: 2px;</string>
+padding: 12px;</string>
     </property>
     <property name="text">
      <string/>

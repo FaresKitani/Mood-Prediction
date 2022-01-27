@@ -95,6 +95,7 @@ class Main(QMainWindow, logUI):
                 my_user_name= the_username
                 global my_password 
                 my_password= the_password
+                
 
                 self.w = MM()
                 ################################ send img and username to index1
@@ -103,7 +104,7 @@ class Main(QMainWindow, logUI):
                 ###################################### end send
                 self.ss1 = SS()
                 self.ss1.set_data(my_user_name)
-                self.ss1.get_data(my_user_name)
+                #self.ss1.get_data(my_user_name)
                 #self.w.setStyleSheet(style())
                 self.w.show()
                 self.showMinimized()
@@ -135,16 +136,7 @@ class Main(QMainWindow, logUI):
 
 
 
-    ###############################################################################################
-
-        ############################## password
-        #### 8 chareatr
-        #### Capital later , small later , number , and key
-
-
-
-
-
+    ##############################################################################################
 
 
     def sing_go(self):

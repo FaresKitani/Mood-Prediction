@@ -40,6 +40,7 @@ import sqlite3
 
 #import Edit UI
 from Index3 import Main2 as Edit_UI
+from index4 import Main as About_UI
 
 
 
@@ -117,6 +118,8 @@ class Main(QMainWindow, MainUI):
 
         ##################### Creat Edit UI
         self.pushButton_Edit.clicked.connect(self.Create_Edit)
+        self.pushButton_9.clicked.connect(self.go_about)
+
 
 
             
@@ -155,14 +158,18 @@ class Main(QMainWindow, MainUI):
         
 
     def startViduo_but(self):
-        EmotionStream()
+        try:
+            EmotionStream()
+        except:
+            pass
 
     def startViduoOneFace_but(self):
-        EmotionStream_one_face()
+        try:
+            EmotionStream_one_face()
+        except:
+            pass
 
-    def about_but(self):
-        pass
-        ################ Adding image
+ 
 
     def addimg(self):
         save_location = QFileDialog.getSaveFileName(self , caption="Save as" , directory="." , filter="All Files(*.*)")
@@ -175,97 +182,130 @@ class Main(QMainWindow, MainUI):
         #Main.MyDB(self)
 
     def video_add(self):
-        save_location = QFileDialog.getSaveFileName(self , caption="Save as" , directory="." , filter="All Files(*.*)")
-        #print(save_location[0])
+        try:
+            save_location = QFileDialog.getSaveFileName(self , caption="Save as" , directory="." , filter="All Files(*.*)")
+            #print(save_location[0])
 
-        qpimg = QPixmap(str(save_location[0]))
-        self.labelimg.setPixmap(qpimg)
-        global img_video
-        img_video = save_location[0]
+            qpimg = QPixmap(str(save_location[0]))
+            #self.labelimg.setPixmap(qpimg)
+            global img_video
+            img_video = save_location[0]
 
-        if(img_video):
-            yas_img = "img\Standar\yes_img.png"
-            self.label_6.setPixmap(QPixmap(yas_img))
+            if(img_video):
+                yas_img = "img\Standar\yes_img.png"
+                self.label_6.setPixmap(QPixmap(yas_img))
+        except:
+            pass
 
     def print_add(self):
-        save_location = QFileDialog.getSaveFileName(self , caption="Save as" , directory="." , filter="All Files(*.*)")
-        #print(save_location[0])
+        try:
+            save_location = QFileDialog.getSaveFileName(self , caption="Save as" , directory="." , filter="All Files(*.*)")
+            #print(save_location[0])
 
-        qpimg = QPixmap(str(save_location[0]))
-        self.labelimg.setPixmap(qpimg)
-        global img_print
-        img_print = save_location[0]
+            qpimg = QPixmap(str(save_location[0]))
+            #self.labelimg.setPixmap(qpimg)
+            global img_print
+            img_print = save_location[0]
 
-        yas_img = "img\Standar\yes_img.png"
-        self.label_8.setPixmap(QPixmap(yas_img))
+            yas_img = "img\Standar\yes_img.png"
+            self.label_8.setPixmap(QPixmap(yas_img))
+        except:
+            pass
 
     def folder_add(self):
-        save_location = QFileDialog.getSaveFileName(self , caption="Save as" , directory="." , filter="All Files(*.*)")
-        #print(save_location[0])
+        try:
+            save_location = QFileDialog.getSaveFileName(self , caption="Save as" , directory="." , filter="All Files(*.*)")
+            #print(save_location[0])
 
-        qpimg = QPixmap(str(save_location[0]))
-        self.labelimg.setPixmap(qpimg)
-        global img
-        img = save_location[0]
+            qpimg = QPixmap(str(save_location[0]))
+            self.labelimg.setPixmap(qpimg)
+            global img
+            img = save_location[0]
 
-        yas_img = "img\Standar\yes_img.png"
-        self.label_5.setPixmap(QPixmap(yas_img))
+            yas_img = "img\Standar\yes_img.png"
+            self.label_5.setPixmap(QPixmap(yas_img))
+        except:
+            pass
 
     def Notification_add(self):
-        save_location = QFileDialog.getSaveFileName(self , caption="Save as" , directory="." , filter="All Files(*.*)")
-        #print(save_location[0])
+        try:
+            save_location = QFileDialog.getSaveFileName(self , caption="Save as" , directory="." , filter="All Files(*.*)")
+            #print(save_location[0])
 
-        qpimg = QPixmap(str(save_location[0]))
-        self.labelimg.setPixmap(qpimg)
-        global img
-        img = save_location[0]
+            qpimg = QPixmap(str(save_location[0]))
+            self.labelimg.setPixmap(qpimg)
+            global img
+            img = save_location[0]
 
-        yas_img = "img\Standar\yes_img.png"
-        self.label_7.setPixmap(QPixmap(yas_img))
+            yas_img = "img\Standar\yes_img.png"
+            self.label_7.setPixmap(QPixmap(yas_img))
+        except:
+            pass
     
     ################################################ 
 
     ############################################### pridict
 
     def video_pridict(self):
-        global img_video
-        TestEmotion(img_video)
-        #img_video = ""
-        
-        No_img = "img\Standar\no_image.png"
-        self.label_6.setPixmap(QPixmap(No_img))
+
+        try:
+            global img_video
+            TestEmotion(img_video)
+            #img_video = ""
+            
+            No_img = "img\Standar\no_image.png"
+            #self.label_6.setPixmap(QPixmap(No_img))
+        except:
+            pass
 
     def print_pridict(self):
 
-        global img_print
-        print_Emotion(img_print)
+        try:
+            global img_print
+            print_Emotion(img_print)
 
-        No_img = "img\Standar\no_image.png"
-        self.label_8.setPixmap(QPixmap(No_img))
+            No_img = "img\Standar\no_image.png"
+            self.label_8.setPixmap(QPixmap(No_img))
 
-        Notifier = ToastNotifier()
-        Notifier.show_toast(" Prediction Mood!" , " The Prediction and print image is done. ",
-        icon_path="img\Standar\mood_icon.ico" ,duration=5,threaded=True)
+            Notifier = ToastNotifier()
+            Notifier.show_toast(" Prediction Mood!" , " The Prediction and print image is done. ",
+            icon_path="img\Standar\mood_icon.ico" ,duration=5,threaded=True)
+        except:
+            pass
         
     def folder_pridict(self):
-        pass
+        try:
+            pass
+
+        except:
+            pass
 
     
     def Notification_pridict(self):
-        pass
+        try:
+            pass
+
+        except:
+            pass
 
 
 
-
+    
+    def go_about(self):
+        self.Aui = About_UI() 
+        #self.w.setStyleSheet(style())
+        self.Aui.show()
+        self.showMinimized()
+        print("About_UI")
 
 
     
 
     def Create_Edit(self):
 
-        Notifier = ToastNotifier()
-        Notifier.show_toast(" Prediction Mood!" , " You can Edit your account ",
-        icon_path="img\Standar\mood_icon.ico" ,duration=5,threaded=True)
+        #Notifier = ToastNotifier()
+        #Notifier.show_toast(" Prediction Mood!" , " You can Edit your account ",
+        #icon_path="img\Standar\mood_icon.ico" ,duration=5,threaded=True)
 
         self.w2 = Edit_UI() 
         #self.w.setStyleSheet(style())
@@ -276,6 +316,10 @@ class Main(QMainWindow, MainUI):
     def fun_Edit(self,my_user_name):
         t1 = my_user_name
         self.label_Edit.setText(t1)
+
+        self.EUI = Edit_UI()
+        self.EUI.get_data(t1) 
+
         try:
             # connect to database
             db = sqlite3.connect("DB_app.db")
@@ -387,24 +431,7 @@ class Main(QMainWindow, MainUI):
 
 
 
-    def MyDB(self):
-        try:
-            # connect to database
-            db = sqlite3.connect("DB_app.db")
-            print(" Connected to Database Successfully ")
-            # setting up the cursor
-            cr = db.cursor()
 
-            
-        except sqlite3.Error as er:
-            print("Error Reading Date {er}")
-
-        finally:
-            if (db):
-                # I Add commit*
-                db.commit()
-                db.close()
-                print(" Connected to Database is Closed ")
 
 
 def main():

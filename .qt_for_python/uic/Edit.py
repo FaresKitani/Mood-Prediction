@@ -207,13 +207,37 @@ class Ui_MainWindow(object):
         self.pushButton_1 = QPushButton(self.centralwidget)
         self.pushButton_1.setObjectName(u"pushButton_1")
         self.pushButton_1.setGeometry(QRect(750, 420, 141, 51))
-        self.pushButton_1.setStyleSheet(u"")
+        self.pushButton_1.setStyleSheet(u"QPushButton {\n"
+" font: bold;\n"
+" font-size:12px;\n"
+" line-height:1.2;\n"
+"  color: #f8f9fa;\n"
+"  justify-content: center;\n"
+"  align-items: center;\n"
+"  padding: 0 20px;\n"
+"  width: 100%;\n"
+"  height: 50px;\n"
+"  background-color: rgb(110, 20, 20);\n"
+"  border-radius: 10px;\n"
+"  box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);\n"
+"  transition: all 0.4s;\n"
+"	\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(74, 20, 20);\n"
+"  box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);\n"
+" \n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: rgb(110, 20, 20);\n"
+"}\n"
+"")
         self.label = QLabel(self.centralwidget)
         self.label.setObjectName(u"label")
         self.label.setGeometry(QRect(350, 0, 421, 61))
         font2 = QFont()
-        font2.setBold(True)
-        font2.setWeight(75)
         self.label.setFont(font2)
         self.label.setCursor(QCursor(Qt.PointingHandCursor))
         self.label.setStyleSheet(u" font-size:25px;\n"
@@ -233,7 +257,7 @@ class Ui_MainWindow(object):
 "\n"
 "border: 4px solid #4A4A6F;\n"
 "border-radius: 20px;\n"
-"padding: 2px;")
+"padding: 12px;")
         self.labelimg.setScaledContents(True)
         self.pushButton_3 = QPushButton(self.centralwidget)
         self.pushButton_3.setObjectName(u"pushButton_3")

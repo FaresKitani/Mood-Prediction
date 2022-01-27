@@ -235,11 +235,67 @@ class Ui_MainWindow(object):
         self.pushButton_3 = QPushButton(self.centralwidget)
         self.pushButton_3.setObjectName(u"pushButton_3")
         self.pushButton_3.setGeometry(QRect(430, 310, 91, 51))
-        self.pushButton_3.setStyleSheet(u"")
+        self.pushButton_3.setStyleSheet(u"QPushButton {\n"
+" font: bold;\n"
+" font-size:12px;\n"
+" line-height:1.2;\n"
+"  color: #f8f9fa;\n"
+"  justify-content: center;\n"
+"  align-items: center;\n"
+"  padding: 0 20px;\n"
+"  width: 100%;\n"
+"  height: 50px;\n"
+"  background-color: rgb(0,102,0);\n"
+"  border-radius: 10px;\n"
+"  box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);\n"
+"  transition: all 0.4s;\n"
+"   background-image: url(img/Standar/ddd1.png);\n"
+"    background-repeat: no-repeat;\n"
+"    background-position: left; \n"
+"  \n"
+"	\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(0,153,51);\n"
+"  box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);\n"
+" \n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: rgb(51,153,0);\n"
+"}\n"
+"")
         self.pushButton_4 = QPushButton(self.centralwidget)
         self.pushButton_4.setObjectName(u"pushButton_4")
         self.pushButton_4.setGeometry(QRect(570, 310, 91, 51))
-        self.pushButton_4.setStyleSheet(u"")
+        self.pushButton_4.setStyleSheet(u"QPushButton {\n"
+" font: bold;\n"
+" font-size:12px;\n"
+" line-height:1.2;\n"
+"  color: #f8f9fa;\n"
+"  justify-content: center;\n"
+"  align-items: center;\n"
+"  padding: 0 20px;\n"
+"  width: 100%;\n"
+"  height: 50px;\n"
+"  background-color: rgb(110, 20, 20);\n"
+"  border-radius: 10px;\n"
+"  box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);\n"
+"  transition: all 0.4s;\n"
+"	\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(74, 20, 20);\n"
+"  box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);\n"
+" \n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: rgb(110, 20, 20);\n"
+"}\n"
+"")
         self.label_2 = QLabel(self.centralwidget)
         self.label_2.setObjectName(u"label_2")
         self.label_2.setGeometry(QRect(650, 20, 311, 51))

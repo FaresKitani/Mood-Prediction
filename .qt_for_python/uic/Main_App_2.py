@@ -17,7 +17,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1278, 854)
+        MainWindow.resize(1391, 851)
         sizePolicy = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -565,13 +565,12 @@ class Ui_MainWindow(object):
         self.centralwidget.setObjectName(u"centralwidget")
         self.ExiteButton = QPushButton(self.centralwidget)
         self.ExiteButton.setObjectName(u"ExiteButton")
-        self.ExiteButton.setGeometry(QRect(1130, 750, 142, 45))
+        self.ExiteButton.setGeometry(QRect(1240, 720, 142, 45))
         self.ExiteButton.setStyleSheet(u"QPushButton {\n"
 " font: bold;\n"
 " font-size:12px;\n"
 " line-height:1.2;\n"
 "  color: #f8f9fa;\n"
-" text-transform:uppercase;\n"
 "  justify-content: center;\n"
 "  align-items: center;\n"
 "  padding: 0 20px;\n"
@@ -599,7 +598,7 @@ class Ui_MainWindow(object):
         self.label_2.setGeometry(QRect(140, 50, 231, 61))
         self.label_Edit = QLabel(self.centralwidget)
         self.label_Edit.setObjectName(u"label_Edit")
-        self.label_Edit.setGeometry(QRect(1120, 110, 161, 41))
+        self.label_Edit.setGeometry(QRect(1240, 120, 161, 41))
         font1 = QFont()
         font1.setPointSize(13)
         font1.setBold(True)
@@ -615,7 +614,6 @@ class Ui_MainWindow(object):
 " font-size:12px;\n"
 " line-height:1.2;\n"
 "  color: #f8f9fa;\n"
-" text-transform:uppercase;\n"
 "  justify-content: center;\n"
 "  align-items: center;\n"
 "  padding: 0 20px;\n"
@@ -646,7 +644,6 @@ class Ui_MainWindow(object):
 " font-size:12px;\n"
 " line-height:1.2;\n"
 "  color: #f8f9fa;\n"
-" text-transform:uppercase;\n"
 "  justify-content: center;\n"
 "  align-items: center;\n"
 "  padding: 0 20px;\n"
@@ -667,7 +664,8 @@ class Ui_MainWindow(object):
 "\n"
 "QPushButton:pressed {\n"
 "   background-color: rgb(74, 74, 111);\n"
-"}")
+"}\n"
+"")
         self.labelimg = QLabel(self.centralwidget)
         self.labelimg.setObjectName(u"labelimg")
         self.labelimg.setGeometry(QRect(390, 150, 400, 400))
@@ -718,7 +716,6 @@ class Ui_MainWindow(object):
 " font-size:12px;\n"
 " line-height:1.2;\n"
 "  color: #f8f9fa;\n"
-" text-transform:uppercase;\n"
 "  justify-content: center;\n"
 "  align-items: center;\n"
 "  padding: 0 20px;\n"
@@ -755,28 +752,32 @@ class Ui_MainWindow(object):
 " font-size:12px;\n"
 " line-height:1.2;\n"
 "  color: #f8f9fa;\n"
-" text-transform:uppercase;\n"
 "  justify-content: center;\n"
 "  align-items: center;\n"
 "  padding: 0 20px;\n"
 "  width: 100%;\n"
 "  height: 50px;\n"
-"  background-color: rgb(80, 80, 150);\n"
+"  background-color: rgb(0,102,0);\n"
 "  border-radius: 10px;\n"
 "  box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);\n"
 "  transition: all 0.4s;\n"
+"   background-image: url(img/Standar/ddd1.png);\n"
+"    background-repeat: no-repeat;\n"
+"    background-position: left; \n"
+"  \n"
 "	\n"
 "}\n"
 "\n"
 "QPushButton:hover {\n"
-"  background-color: rgb(74, 74, 125);\n"
+"    background-color: rgb(0,153,51);\n"
 "  box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);\n"
 " \n"
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
-"   background-color: rgb(74, 74, 111);\n"
-"}")
+"    background-color: rgb(51,153,0);\n"
+"}\n"
+"")
 #if QT_CONFIG(shortcut)
         self.ViduoButton.setShortcut(u"")
 #endif // QT_CONFIG(shortcut)
@@ -789,13 +790,12 @@ class Ui_MainWindow(object):
 " font-size:12px;\n"
 " line-height:1.2;\n"
 "  color: #f8f9fa;\n"
-" text-transform:uppercase;\n"
 "  justify-content: center;\n"
 "  align-items: center;\n"
 "  padding: 0 20px;\n"
 "  width: 100%;\n"
 "  height: 50px;\n"
-"  background-color: rgb(110, 20, 20);\n"
+"  background-color: rgb(80, 80, 150);\n"
 "  border-radius: 10px;\n"
 "  box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);\n"
 "  transition: all 0.4s;\n"
@@ -803,18 +803,18 @@ class Ui_MainWindow(object):
 "}\n"
 "\n"
 "QPushButton:hover {\n"
-"    background-color: rgb(74, 20, 20);\n"
+"  background-color: rgb(74, 74, 125);\n"
 "  box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);\n"
 " \n"
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
-"    background-color: rgb(110, 20, 20);\n"
+"   background-color: rgb(74, 74, 111);\n"
 "}\n"
 "")
         self.label_13 = QLabel(self.centralwidget)
         self.label_13.setObjectName(u"label_13")
-        self.label_13.setGeometry(QRect(800, 630, 451, 111))
+        self.label_13.setGeometry(QRect(800, 630, 451, 81))
         self.label_13.setFont(font2)
         self.label_13.setAlignment(Qt.AlignHCenter|Qt.AlignTop)
         self.label_13.setTextInteractionFlags(Qt.NoTextInteraction)
@@ -827,60 +827,67 @@ class Ui_MainWindow(object):
 " font-size:12px;\n"
 " line-height:1.2;\n"
 "  color: #f8f9fa;\n"
-" text-transform:uppercase;\n"
 "  justify-content: center;\n"
 "  align-items: center;\n"
 "  padding: 0 20px;\n"
 "  width: 100%;\n"
 "  height: 50px;\n"
-"  background-color: rgb(80, 80, 150);\n"
+"  background-color: rgb(0,102,0);\n"
 "  border-radius: 10px;\n"
 "  box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);\n"
 "  transition: all 0.4s;\n"
+"   background-image: url(img/Standar/ddd1.png);\n"
+"    background-repeat: no-repeat;\n"
+"    background-position: left; \n"
+"  \n"
 "	\n"
 "}\n"
 "\n"
 "QPushButton:hover {\n"
-"  background-color: rgb(74, 74, 125);\n"
+"    background-color: rgb(0,153,51);\n"
 "  box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);\n"
 " \n"
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
-"   background-color: rgb(74, 74, 111);\n"
-"}")
+"    background-color: rgb(51,153,0);\n"
+"}\n"
+"")
         self.pushButton_10 = QPushButton(self.centralwidget)
         self.pushButton_10.setObjectName(u"pushButton_10")
         self.pushButton_10.setGeometry(QRect(220, 690, 142, 45))
         self.pushButton_10.setMinimumSize(QSize(142, 0))
         self.pushButton_10.setStyleSheet(u"QPushButton {\n"
 " font: bold;\n"
-" \n"
 " font-size:12px;\n"
 " line-height:1.2;\n"
 "  color: #f8f9fa;\n"
-" text-transform:uppercase;\n"
 "  justify-content: center;\n"
 "  align-items: center;\n"
 "  padding: 0 20px;\n"
 "  width: 100%;\n"
 "  height: 50px;\n"
-"  background-color: rgb(80, 80, 150);\n"
+"  background-color: rgb(0,102,0);\n"
 "  border-radius: 10px;\n"
 "  box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);\n"
 "  transition: all 0.4s;\n"
+"   background-image: url(img/Standar/ddd1.png);\n"
+"    background-repeat: no-repeat;\n"
+"    background-position: left; \n"
+"  \n"
 "	\n"
 "}\n"
 "\n"
 "QPushButton:hover {\n"
-"  background-color: rgb(74, 74, 125);\n"
+"    background-color: rgb(0,153,51);\n"
 "  box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);\n"
 " \n"
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
-"   background-color: rgb(74, 74, 111);\n"
-"}")
+"    background-color: rgb(51,153,0);\n"
+"}\n"
+"")
         self.pushButton_12 = QPushButton(self.centralwidget)
         self.pushButton_12.setObjectName(u"pushButton_12")
         self.pushButton_12.setGeometry(QRect(220, 630, 142, 45))
@@ -890,28 +897,32 @@ class Ui_MainWindow(object):
 " font-size:12px;\n"
 " line-height:1.2;\n"
 "  color: #f8f9fa;\n"
-" text-transform:uppercase;\n"
 "  justify-content: center;\n"
 "  align-items: center;\n"
 "  padding: 0 20px;\n"
 "  width: 100%;\n"
 "  height: 50px;\n"
-"  background-color: rgb(80, 80, 150);\n"
+"  background-color: rgb(0,102,0);\n"
 "  border-radius: 10px;\n"
 "  box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);\n"
 "  transition: all 0.4s;\n"
+"   background-image: url(img/Standar/ddd1.png);\n"
+"    background-repeat: no-repeat;\n"
+"    background-position: left; \n"
+"  \n"
 "	\n"
 "}\n"
 "\n"
 "QPushButton:hover {\n"
-"  background-color: rgb(74, 74, 125);\n"
+"    background-color: rgb(0,153,51);\n"
 "  box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);\n"
 " \n"
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
-"   background-color: rgb(74, 74, 111);\n"
-"}")
+"    background-color: rgb(51,153,0);\n"
+"}\n"
+"")
         self.comboBox = QComboBox(self.centralwidget)
         self.comboBox.addItem("")
         self.comboBox.addItem("")
@@ -925,14 +936,14 @@ class Ui_MainWindow(object):
         self.comboBox.setGeometry(QRect(220, 750, 141, 45))
         self.comboBox.setStyleSheet(u"font: bold;\n"
 " font-size:12px;\n"
+" line-height:1.2;\n"
 "  color: #f8f9fa;\n"
-" text-transform:uppercase;\n"
 "  justify-content: center;\n"
 "  align-items: center;\n"
-"  padding: 0 10px;\n"
+"  padding: 0 20px;\n"
 "  width: 100%;\n"
 "  height: 50px;\n"
-"  background-color: rgb(80, 80, 150);\n"
+"  background-color: rgb(0,102,0);\n"
 "  border-radius: 10px;")
         self.pushButton_13 = QPushButton(self.centralwidget)
         self.pushButton_13.setObjectName(u"pushButton_13")
@@ -943,137 +954,12 @@ class Ui_MainWindow(object):
 " font-size:12px;\n"
 " line-height:1.2;\n"
 "  color: #f8f9fa;\n"
-" text-transform:uppercase;\n"
 "  justify-content: center;\n"
 "  align-items: center;\n"
 "  padding: 0 20px;\n"
 "  width: 100%;\n"
 "  height: 50px;\n"
-"  background-color: rgb(80, 80, 150);\n"
-"  border-radius: 10px;\n"
-"  box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);\n"
-"  transition: all 0.4s;\n"
-"	\n"
-"}\n"
-"\n"
-"QPushButton:hover {\n"
-"  background-color: rgb(74, 74, 125);\n"
-"  box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);\n"
-" \n"
-"}\n"
-"\n"
-"QPushButton:pressed {\n"
-"   background-color: rgb(74, 74, 111);\n"
-"}")
-        self.pushButton_14 = QPushButton(self.centralwidget)
-        self.pushButton_14.setObjectName(u"pushButton_14")
-        self.pushButton_14.setGeometry(QRect(219, 400, 142, 45))
-        self.pushButton_14.setMinimumSize(QSize(142, 0))
-        self.pushButton_14.setStyleSheet(u"QPushButton {\n"
-" font: bold;\n"
-" font-size:12px;\n"
-" line-height:1.2;\n"
-"  color: #f8f9fa;\n"
-" text-transform:uppercase;\n"
-"  justify-content: center;\n"
-"  align-items: center;\n"
-"  padding: 0 20px;\n"
-"  width: 100%;\n"
-"  height: 50px;\n"
-"  background-color: rgb(80, 80, 150);\n"
-"  border-radius: 10px;\n"
-"  box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);\n"
-"  transition: all 0.4s;\n"
-"	\n"
-"}\n"
-"\n"
-"QPushButton:hover {\n"
-"  background-color: rgb(74, 74, 125);\n"
-"  box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);\n"
-" \n"
-"}\n"
-"\n"
-"QPushButton:pressed {\n"
-"   background-color: rgb(74, 74, 111);\n"
-"}")
-        self.pushButton_15 = QPushButton(self.centralwidget)
-        self.pushButton_15.setObjectName(u"pushButton_15")
-        self.pushButton_15.setGeometry(QRect(220, 510, 142, 45))
-        self.pushButton_15.setMinimumSize(QSize(142, 0))
-        self.pushButton_15.setStyleSheet(u"QPushButton {\n"
-" font: bold;\n"
-" font-size:12px;\n"
-" line-height:1.2;\n"
-"  color: #f8f9fa;\n"
-" text-transform:uppercase;\n"
-"  justify-content: center;\n"
-"  align-items: center;\n"
-"  padding: 0 20px;\n"
-"  width: 100%;\n"
-"  height: 50px;\n"
-"  background-color: rgb(80, 80, 150);\n"
-"  border-radius: 10px;\n"
-"  box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);\n"
-"  transition: all 0.4s;\n"
-"	\n"
-"}\n"
-"\n"
-"QPushButton:hover {\n"
-"  background-color: rgb(74, 74, 125);\n"
-"  box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);\n"
-" \n"
-"}\n"
-"\n"
-"QPushButton:pressed {\n"
-"   background-color: rgb(74, 74, 111);\n"
-"}")
-        self.pushButton_16 = QPushButton(self.centralwidget)
-        self.pushButton_16.setObjectName(u"pushButton_16")
-        self.pushButton_16.setGeometry(QRect(220, 570, 142, 45))
-        self.pushButton_16.setMinimumSize(QSize(142, 0))
-        self.pushButton_16.setStyleSheet(u"QPushButton {\n"
-" font: bold;\n"
-" font-size:12px;\n"
-" line-height:1.2;\n"
-"  color: #f8f9fa;\n"
-" text-transform:uppercase;\n"
-"  justify-content: center;\n"
-"  align-items: center;\n"
-"  padding: 0 20px;\n"
-"  width: 100%;\n"
-"  height: 50px;\n"
-"  background-color: rgb(80, 80, 150);\n"
-"  border-radius: 10px;\n"
-"  box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);\n"
-"  transition: all 0.4s;\n"
-"	\n"
-"}\n"
-"\n"
-"QPushButton:hover {\n"
-"  background-color: rgb(74, 74, 125);\n"
-"  box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);\n"
-" \n"
-"}\n"
-"\n"
-"QPushButton:pressed {\n"
-"   background-color: rgb(74, 74, 111);\n"
-"}")
-        self.pushButton = QPushButton(self.centralwidget)
-        self.pushButton.setObjectName(u"pushButton")
-        self.pushButton.setGeometry(QRect(10, 160, 201, 45))
-        self.pushButton.setAutoFillBackground(False)
-        self.pushButton.setStyleSheet(u"QPushButton {\n"
-" font: bold;\n"
-" font-size:12px;\n"
-" line-height:1.2;\n"
-"  color: #f8f9fa;\n"
-" text-transform:uppercase;\n"
-"  justify-content: center;\n"
-"  align-items: center;\n"
-"  padding: 0 20px;\n"
-"  width: 100%;\n"
-"  height: 50px;\n"
-"  background-color: rgb(110, 20, 20);\n"
+"  background-color: rgb(0,102,0);\n"
 "  border-radius: 10px;\n"
 "  box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);\n"
 "  transition: all 0.4s;\n"
@@ -1085,13 +971,149 @@ class Ui_MainWindow(object):
 "}\n"
 "\n"
 "QPushButton:hover {\n"
-"    background-color: rgb(74, 20, 20);\n"
+"    background-color: rgb(0,153,51);\n"
 "  box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);\n"
 " \n"
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
-"    background-color: rgb(110, 20, 20);\n"
+"    background-color: rgb(51,153,0);\n"
+"}\n"
+"")
+        self.pushButton_14 = QPushButton(self.centralwidget)
+        self.pushButton_14.setObjectName(u"pushButton_14")
+        self.pushButton_14.setGeometry(QRect(219, 400, 142, 45))
+        self.pushButton_14.setMinimumSize(QSize(142, 0))
+        self.pushButton_14.setStyleSheet(u"QPushButton {\n"
+" font: bold;\n"
+" font-size:12px;\n"
+" line-height:1.2;\n"
+"  color: #f8f9fa;\n"
+"  justify-content: center;\n"
+"  align-items: center;\n"
+"  padding: 0 20px;\n"
+"  width: 100%;\n"
+"  height: 50px;\n"
+"  background-color: rgb(0,102,0);\n"
+"  border-radius: 10px;\n"
+"  box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);\n"
+"  transition: all 0.4s;\n"
+"   background-image: url(img/Standar/ddd1.png);\n"
+"    background-repeat: no-repeat;\n"
+"    background-position: left; \n"
+"  \n"
+"	\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(0,153,51);\n"
+"  box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);\n"
+" \n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: rgb(51,153,0);\n"
+"}\n"
+"")
+        self.pushButton_15 = QPushButton(self.centralwidget)
+        self.pushButton_15.setObjectName(u"pushButton_15")
+        self.pushButton_15.setGeometry(QRect(220, 510, 142, 45))
+        self.pushButton_15.setMinimumSize(QSize(142, 0))
+        self.pushButton_15.setStyleSheet(u"QPushButton {\n"
+" font: bold;\n"
+" font-size:12px;\n"
+" line-height:1.2;\n"
+"  color: #f8f9fa;\n"
+"  justify-content: center;\n"
+"  align-items: center;\n"
+"  padding: 0 20px;\n"
+"  width: 100%;\n"
+"  height: 50px;\n"
+"  background-color: rgb(0,102,0);\n"
+"  border-radius: 10px;\n"
+"  box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);\n"
+"  transition: all 0.4s;\n"
+"   background-image: url(img/Standar/ddd1.png);\n"
+"    background-repeat: no-repeat;\n"
+"    background-position: left; \n"
+"  \n"
+"	\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(0,153,51);\n"
+"  box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);\n"
+" \n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: rgb(51,153,0);\n"
+"}\n"
+"")
+        self.pushButton_16 = QPushButton(self.centralwidget)
+        self.pushButton_16.setObjectName(u"pushButton_16")
+        self.pushButton_16.setGeometry(QRect(220, 570, 142, 45))
+        self.pushButton_16.setMinimumSize(QSize(142, 0))
+        self.pushButton_16.setStyleSheet(u"QPushButton {\n"
+" font: bold;\n"
+" font-size:12px;\n"
+" line-height:1.2;\n"
+"  color: #f8f9fa;\n"
+"  justify-content: center;\n"
+"  align-items: center;\n"
+"  padding: 0 20px;\n"
+"  width: 100%;\n"
+"  height: 50px;\n"
+"  background-color: rgb(0,102,0);\n"
+"  border-radius: 10px;\n"
+"  box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);\n"
+"  transition: all 0.4s;\n"
+"   background-image: url(img/Standar/ddd1.png);\n"
+"    background-repeat: no-repeat;\n"
+"    background-position: left; \n"
+"  \n"
+"	\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(0,153,51);\n"
+"  box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);\n"
+" \n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: rgb(51,153,0);\n"
+"}\n"
+"")
+        self.pushButton = QPushButton(self.centralwidget)
+        self.pushButton.setObjectName(u"pushButton")
+        self.pushButton.setGeometry(QRect(10, 160, 201, 45))
+        self.pushButton.setAutoFillBackground(False)
+        self.pushButton.setStyleSheet(u"QPushButton {\n"
+" font: bold;\n"
+" font-size:12px;\n"
+" line-height:1.2;\n"
+"  color: #f8f9fa;\n"
+"  justify-content: center;\n"
+"  align-items: center;\n"
+"  padding: 0 20px;\n"
+"  width: 100%;\n"
+"  height: 50px;\n"
+"  background-color: rgb(80, 80, 150);\n"
+"  border-radius: 10px;\n"
+"  box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);\n"
+"  transition: all 0.4s;\n"
+"	\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"  background-color: rgb(74, 74, 125);\n"
+"  box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);\n"
+" \n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"   background-color: rgb(74, 74, 111);\n"
 "}\n"
 "")
         self.pushButton.setIconSize(QSize(2, 2))
@@ -1104,13 +1126,12 @@ class Ui_MainWindow(object):
 " font-size:12px;\n"
 " line-height:1.2;\n"
 "  color: #f8f9fa;\n"
-" text-transform:uppercase;\n"
 "  justify-content: center;\n"
 "  align-items: center;\n"
 "  padding: 0 20px;\n"
 "  width: 100%;\n"
 "  height: 50px;\n"
-"  background-color: rgb(110, 20, 20);\n"
+"  background-color: rgb(80, 80, 150);\n"
 "  border-radius: 10px;\n"
 "  box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);\n"
 "  transition: all 0.4s;\n"
@@ -1118,13 +1139,13 @@ class Ui_MainWindow(object):
 "}\n"
 "\n"
 "QPushButton:hover {\n"
-"    background-color: rgb(74, 20, 20);\n"
+"  background-color: rgb(74, 74, 125);\n"
 "  box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);\n"
 " \n"
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
-"    background-color: rgb(110, 20, 20);\n"
+"   background-color: rgb(74, 74, 111);\n"
 "}\n"
 "")
         self.pushButton_3 = QPushButton(self.centralwidget)
@@ -1135,13 +1156,12 @@ class Ui_MainWindow(object):
 " font-size:12px;\n"
 " line-height:1.2;\n"
 "  color: #f8f9fa;\n"
-" text-transform:uppercase;\n"
 "  justify-content: center;\n"
 "  align-items: center;\n"
 "  padding: 0 20px;\n"
 "  width: 100%;\n"
 "  height: 50px;\n"
-"  background-color: rgb(110, 20, 20);\n"
+"  background-color: rgb(80, 80, 150);\n"
 "  border-radius: 10px;\n"
 "  box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);\n"
 "  transition: all 0.4s;\n"
@@ -1149,13 +1169,13 @@ class Ui_MainWindow(object):
 "}\n"
 "\n"
 "QPushButton:hover {\n"
-"    background-color: rgb(74, 20, 20);\n"
+"  background-color: rgb(74, 74, 125);\n"
 "  box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);\n"
 " \n"
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
-"    background-color: rgb(110, 20, 20);\n"
+"   background-color: rgb(74, 74, 111);\n"
 "}\n"
 "")
         self.pushButton_5 = QPushButton(self.centralwidget)
@@ -1166,13 +1186,12 @@ class Ui_MainWindow(object):
 " font-size:12px;\n"
 " line-height:1.2;\n"
 "  color: #f8f9fa;\n"
-" text-transform:uppercase;\n"
 "  justify-content: center;\n"
 "  align-items: center;\n"
 "  padding: 0 20px;\n"
 "  width: 100%;\n"
 "  height: 50px;\n"
-"  background-color: rgb(110, 20, 20);\n"
+"  background-color: rgb(80, 80, 150);\n"
 "  border-radius: 10px;\n"
 "  box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);\n"
 "  transition: all 0.4s;\n"
@@ -1180,13 +1199,13 @@ class Ui_MainWindow(object):
 "}\n"
 "\n"
 "QPushButton:hover {\n"
-"    background-color: rgb(74, 20, 20);\n"
+"  background-color: rgb(74, 74, 125);\n"
 "  box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);\n"
 " \n"
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
-"    background-color: rgb(110, 20, 20);\n"
+"   background-color: rgb(74, 74, 111);\n"
 "}\n"
 "")
         self.label_5 = QLabel(self.centralwidget)
@@ -1220,39 +1239,6 @@ class Ui_MainWindow(object):
 " font-size:12px;\n"
 " line-height:1.2;\n"
 "  color: #f8f9fa;\n"
-" text-transform:uppercase;\n"
-"  justify-content: center;\n"
-"  align-items: center;\n"
-"  padding: 0 20px;\n"
-"  width: 100%;\n"
-"  height: 50px;\n"
-"  background-color: rgb(110, 20, 20);\n"
-"  border-radius: 10px;\n"
-"  box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);\n"
-"  transition: all 0.4s;\n"
-"	\n"
-"}\n"
-"\n"
-"QPushButton:hover {\n"
-"    background-color: rgb(74, 20, 20);\n"
-"  box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);\n"
-" \n"
-"}\n"
-"\n"
-"QPushButton:pressed {\n"
-"    background-color: rgb(110, 20, 20);\n"
-"}\n"
-"")
-        self.pushButton_17 = QPushButton(self.centralwidget)
-        self.pushButton_17.setObjectName(u"pushButton_17")
-        self.pushButton_17.setGeometry(QRect(220, 280, 142, 45))
-        self.pushButton_17.setMinimumSize(QSize(142, 0))
-        self.pushButton_17.setStyleSheet(u"QPushButton {\n"
-" font: bold;\n"
-" font-size:12px;\n"
-" line-height:1.2;\n"
-"  color: #f8f9fa;\n"
-" text-transform:uppercase;\n"
 "  justify-content: center;\n"
 "  align-items: center;\n"
 "  padding: 0 20px;\n"
@@ -1273,7 +1259,43 @@ class Ui_MainWindow(object):
 "\n"
 "QPushButton:pressed {\n"
 "   background-color: rgb(74, 74, 111);\n"
-"}")
+"}\n"
+"")
+        self.pushButton_17 = QPushButton(self.centralwidget)
+        self.pushButton_17.setObjectName(u"pushButton_17")
+        self.pushButton_17.setGeometry(QRect(220, 280, 142, 45))
+        self.pushButton_17.setMinimumSize(QSize(142, 0))
+        self.pushButton_17.setStyleSheet(u"QPushButton {\n"
+" font: bold;\n"
+" font-size:12px;\n"
+" line-height:1.2;\n"
+"  color: #f8f9fa;\n"
+"  justify-content: center;\n"
+"  align-items: center;\n"
+"  padding: 0 20px;\n"
+"  width: 100%;\n"
+"  height: 50px;\n"
+"  background-color: rgb(0,102,0);\n"
+"  border-radius: 10px;\n"
+"  box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);\n"
+"  transition: all 0.4s;\n"
+"   background-image: url(img/Standar/ddd1.png);\n"
+"    background-repeat: no-repeat;\n"
+"    background-position: left; \n"
+"  \n"
+"	\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(0,153,51);\n"
+"  box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);\n"
+" \n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: rgb(51,153,0);\n"
+"}\n"
+"")
         self.label_8 = QLabel(self.centralwidget)
         self.label_8.setObjectName(u"label_8")
         self.label_8.setGeometry(QRect(330, 280, 21, 21))
@@ -1290,31 +1312,35 @@ class Ui_MainWindow(object):
 " font-size:12px;\n"
 " line-height:1.2;\n"
 "  color: #f8f9fa;\n"
-" text-transform:uppercase;\n"
 "  justify-content: center;\n"
 "  align-items: center;\n"
 "  padding: 0 20px;\n"
 "  width: 100%;\n"
 "  height: 50px;\n"
-"  background-color: rgb(80, 80, 150);\n"
+"  background-color: rgb(0,102,0);\n"
 "  border-radius: 10px;\n"
 "  box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);\n"
 "  transition: all 0.4s;\n"
+"   background-image: url(img/Standar/ddd1.png);\n"
+"    background-repeat: no-repeat;\n"
+"    background-position: left; \n"
+"  \n"
 "	\n"
 "}\n"
 "\n"
 "QPushButton:hover {\n"
-"  background-color: rgb(74, 74, 125);\n"
+"    background-color: rgb(0,153,51);\n"
 "  box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);\n"
 " \n"
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
-"   background-color: rgb(74, 74, 111);\n"
-"}")
+"    background-color: rgb(51,153,0);\n"
+"}\n"
+"")
         self.pushButton_Edit = QPushButton(self.centralwidget)
         self.pushButton_Edit.setObjectName(u"pushButton_Edit")
-        self.pushButton_Edit.setGeometry(QRect(1150, 0, 111, 111))
+        self.pushButton_Edit.setGeometry(QRect(1260, 0, 111, 111))
         self.pushButton_Edit.setStyleSheet(u"QPushButton {\n"
 "\n"
 "  box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);\n"
@@ -1370,7 +1396,7 @@ class Ui_MainWindow(object):
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(MainWindow)
         self.menubar.setObjectName(u"menubar")
-        self.menubar.setGeometry(QRect(0, 0, 1278, 26))
+        self.menubar.setGeometry(QRect(0, 0, 1391, 26))
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QStatusBar(MainWindow)
         self.statusbar.setObjectName(u"statusbar")
@@ -1389,7 +1415,7 @@ class Ui_MainWindow(object):
         self.ExiteButton.setText(QCoreApplication.translate("MainWindow", u"Exit", None))
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:16pt; font-weight:600;\">Mood Prediction </span></p></body></html>", None))
         self.label_Edit.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:12pt; font-weight:600;\">User Name</span></p></body></html>", None))
-        self.pushButton_4.setText(QCoreApplication.translate("MainWindow", u"ADD", None))
+        self.pushButton_4.setText(QCoreApplication.translate("MainWindow", u"Add", None))
 #if QT_CONFIG(whatsthis)
         self.deletButton.setWhatsThis(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:14pt; font-weight:600;\">+</span></p></body></html>", None))
 #endif // QT_CONFIG(whatsthis)
