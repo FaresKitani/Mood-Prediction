@@ -219,7 +219,7 @@ QLineEdit:focus{
      <string notr="true"/>
     </property>
     <property name="text">
-     <string>Log In</string>
+     <string>Log in</string>
     </property>
     <property name="checkable">
      <bool>false</bool>
@@ -297,7 +297,7 @@ border-image: url(img/logo_mood.png);</string>
      <string notr="true"/>
     </property>
     <property name="text">
-     <string>Sign In</string>
+     <string>Sign up</string>
     </property>
     <property name="checkable">
      <bool>false</bool>

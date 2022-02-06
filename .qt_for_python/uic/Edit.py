@@ -217,21 +217,25 @@ class Ui_MainWindow(object):
 "  padding: 0 20px;\n"
 "  width: 100%;\n"
 "  height: 50px;\n"
-"  background-color: rgb(110, 20, 20);\n"
+"  background-color: rgb(0,102,0);\n"
 "  border-radius: 10px;\n"
 "  box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);\n"
 "  transition: all 0.4s;\n"
+"   background-image: url(img/Standar/ddd1.png);\n"
+"    background-repeat: no-repeat;\n"
+"    background-position: left; \n"
+"  \n"
 "	\n"
 "}\n"
 "\n"
 "QPushButton:hover {\n"
-"    background-color: rgb(74, 20, 20);\n"
+"    background-color: rgb(0,153,51);\n"
 "  box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);\n"
 " \n"
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
-"    background-color: rgb(110, 20, 20);\n"
+"    background-color: rgb(51,153,0);\n"
 "}\n"
 "")
         self.label = QLabel(self.centralwidget)
@@ -293,7 +297,7 @@ class Ui_MainWindow(object):
     # setupUi
 
     def retranslateUi(self, MainWindow):
-        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
+        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"Edit", None))
         self.lineEdit_6.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Paswward", None))
         self.lineEdit_3.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Last Name", None))
         self.lineEdit_7.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Paswward", None))
@@ -304,7 +308,7 @@ class Ui_MainWindow(object):
         self.label_9.setText("")
         self.lineEdit_5.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Email", None))
         self.lineEdit_2.setPlaceholderText(QCoreApplication.translate("MainWindow", u"First Name", None))
-        self.pushButton_1.setText(QCoreApplication.translate("MainWindow", u"Edit", None))
+        self.pushButton_1.setText(QCoreApplication.translate("MainWindow", u"Save", None))
         self.label.setText(QCoreApplication.translate("MainWindow", u"Mood Prediction\n"
 "", None))
         self.labelimg.setText("")

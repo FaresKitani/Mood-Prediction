@@ -192,11 +192,11 @@ class Ui_MainWindow(object):
         self.user_text.setText("")
         self.user_text.setPlaceholderText(QCoreApplication.translate("MainWindow", u" User Name", None))
         self.password_text.setPlaceholderText(QCoreApplication.translate("MainWindow", u" Password", None))
-        self.Login_But.setText(QCoreApplication.translate("MainWindow", u"Log In", None))
+        self.Login_But.setText(QCoreApplication.translate("MainWindow", u"Log in", None))
         self.labelaccount.setText("")
         self.label.setText(QCoreApplication.translate("MainWindow", u"Mood Prediction\n"
 "", None))
-        self.signin_But.setText(QCoreApplication.translate("MainWindow", u"Sign In", None))
+        self.signin_But.setText(QCoreApplication.translate("MainWindow", u"Sign up", None))
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"Oops! ,Username Not Found.", None))
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
     # retranslateUi

@@ -17,7 +17,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1391, 851)
+        MainWindow.resize(1391, 887)
         sizePolicy = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -565,7 +565,7 @@ class Ui_MainWindow(object):
         self.centralwidget.setObjectName(u"centralwidget")
         self.ExiteButton = QPushButton(self.centralwidget)
         self.ExiteButton.setObjectName(u"ExiteButton")
-        self.ExiteButton.setGeometry(QRect(1240, 720, 142, 45))
+        self.ExiteButton.setGeometry(QRect(10, 790, 201, 45))
         self.ExiteButton.setStyleSheet(u"QPushButton {\n"
 " font: bold;\n"
 " font-size:12px;\n"
@@ -595,10 +595,10 @@ class Ui_MainWindow(object):
 "")
         self.label_2 = QLabel(self.centralwidget)
         self.label_2.setObjectName(u"label_2")
-        self.label_2.setGeometry(QRect(140, 50, 231, 61))
+        self.label_2.setGeometry(QRect(140, 0, 231, 61))
         self.label_Edit = QLabel(self.centralwidget)
         self.label_Edit.setObjectName(u"label_Edit")
-        self.label_Edit.setGeometry(QRect(1240, 120, 161, 41))
+        self.label_Edit.setGeometry(QRect(1240, 130, 161, 41))
         font1 = QFont()
         font1.setPointSize(13)
         font1.setBold(True)
@@ -608,7 +608,7 @@ class Ui_MainWindow(object):
         self.label_Edit.setAlignment(Qt.AlignCenter)
         self.pushButton_4 = QPushButton(self.centralwidget)
         self.pushButton_4.setObjectName(u"pushButton_4")
-        self.pushButton_4.setGeometry(QRect(420, 560, 142, 45))
+        self.pushButton_4.setGeometry(QRect(420, 600, 142, 45))
         self.pushButton_4.setStyleSheet(u"QPushButton {\n"
 " font: bold;\n"
 " font-size:12px;\n"
@@ -638,7 +638,7 @@ class Ui_MainWindow(object):
 "")
         self.deletButton = QPushButton(self.centralwidget)
         self.deletButton.setObjectName(u"deletButton")
-        self.deletButton.setGeometry(QRect(620, 560, 142, 45))
+        self.deletButton.setGeometry(QRect(630, 600, 142, 45))
         self.deletButton.setStyleSheet(u"QPushButton {\n"
 " font: bold;\n"
 " font-size:12px;\n"
@@ -668,7 +668,7 @@ class Ui_MainWindow(object):
 "")
         self.labelimg = QLabel(self.centralwidget)
         self.labelimg.setObjectName(u"labelimg")
-        self.labelimg.setGeometry(QRect(390, 150, 400, 400))
+        self.labelimg.setGeometry(QRect(400, 190, 400, 400))
         self.labelimg.setCursor(QCursor(Qt.PointingHandCursor))
         self.labelimg.setStyleSheet(u"image: url(img/Standar/Emoji_icon_without_Mouth.png);\n"
 "\n"
@@ -680,7 +680,7 @@ class Ui_MainWindow(object):
         self.labelimg.setMargin(10)
         self.labelimg2 = QLabel(self.centralwidget)
         self.labelimg2.setObjectName(u"labelimg2")
-        self.labelimg2.setGeometry(QRect(840, 150, 400, 400))
+        self.labelimg2.setGeometry(QRect(880, 190, 400, 400))
         sizePolicy.setHeightForWidth(self.labelimg2.sizePolicy().hasHeightForWidth())
         self.labelimg2.setSizePolicy(sizePolicy)
         self.labelimg2.setCursor(QCursor(Qt.PointingHandCursor))
@@ -695,7 +695,7 @@ class Ui_MainWindow(object):
         self.labelimg2.setMargin(10)
         self.label_11 = QLabel(self.centralwidget)
         self.label_11.setObjectName(u"label_11")
-        self.label_11.setGeometry(QRect(650, 620, 151, 51))
+        self.label_11.setGeometry(QRect(680, 730, 151, 51))
         font2 = QFont()
         font2.setPointSize(15)
         font2.setBold(True)
@@ -704,13 +704,13 @@ class Ui_MainWindow(object):
         self.label_11.setAlignment(Qt.AlignCenter)
         self.label_10 = QLabel(self.centralwidget)
         self.label_10.setObjectName(u"label_10")
-        self.label_10.setGeometry(QRect(970, 80, 131, 51))
+        self.label_10.setGeometry(QRect(1030, 130, 131, 51))
         self.label_12 = QLabel(self.centralwidget)
         self.label_12.setObjectName(u"label_12")
-        self.label_12.setGeometry(QRect(530, 80, 111, 51))
+        self.label_12.setGeometry(QRect(550, 120, 111, 51))
         self.predictButton = QPushButton(self.centralwidget)
         self.predictButton.setObjectName(u"predictButton")
-        self.predictButton.setGeometry(QRect(930, 570, 201, 45))
+        self.predictButton.setGeometry(QRect(980, 600, 211, 45))
         self.predictButton.setStyleSheet(u"QPushButton {\n"
 " font: bold;\n"
 " font-size:12px;\n"
@@ -740,7 +740,7 @@ class Ui_MainWindow(object):
 "")
         self.ViduoButton = QPushButton(self.centralwidget)
         self.ViduoButton.setObjectName(u"ViduoButton")
-        self.ViduoButton.setGeometry(QRect(220, 220, 142, 45))
+        self.ViduoButton.setGeometry(QRect(220, 190, 142, 45))
         sizePolicy1 = QSizePolicy(QSizePolicy.Minimum, QSizePolicy.Fixed)
         sizePolicy1.setHorizontalStretch(0)
         sizePolicy1.setVerticalStretch(0)
@@ -784,7 +784,7 @@ class Ui_MainWindow(object):
         self.ViduoButton.setAutoDefault(False)
         self.pushButton_9 = QPushButton(self.centralwidget)
         self.pushButton_9.setObjectName(u"pushButton_9")
-        self.pushButton_9.setGeometry(QRect(10, 750, 201, 45))
+        self.pushButton_9.setGeometry(QRect(10, 720, 201, 45))
         self.pushButton_9.setStyleSheet(u"QPushButton {\n"
 " font: bold;\n"
 " font-size:12px;\n"
@@ -814,13 +814,14 @@ class Ui_MainWindow(object):
 "")
         self.label_13 = QLabel(self.centralwidget)
         self.label_13.setObjectName(u"label_13")
-        self.label_13.setGeometry(QRect(800, 630, 451, 81))
+        self.label_13.setGeometry(QRect(870, 740, 501, 121))
         self.label_13.setFont(font2)
-        self.label_13.setAlignment(Qt.AlignHCenter|Qt.AlignTop)
+        self.label_13.setTextFormat(Qt.RichText)
+        self.label_13.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignTop)
         self.label_13.setTextInteractionFlags(Qt.NoTextInteraction)
         self.ViduoButton_2 = QPushButton(self.centralwidget)
         self.ViduoButton_2.setObjectName(u"ViduoButton_2")
-        self.ViduoButton_2.setGeometry(QRect(220, 160, 142, 45))
+        self.ViduoButton_2.setGeometry(QRect(220, 130, 142, 45))
         self.ViduoButton_2.setMinimumSize(QSize(142, 0))
         self.ViduoButton_2.setStyleSheet(u"QPushButton {\n"
 " font: bold;\n"
@@ -855,7 +856,7 @@ class Ui_MainWindow(object):
 "")
         self.pushButton_10 = QPushButton(self.centralwidget)
         self.pushButton_10.setObjectName(u"pushButton_10")
-        self.pushButton_10.setGeometry(QRect(220, 690, 142, 45))
+        self.pushButton_10.setGeometry(QRect(220, 660, 142, 45))
         self.pushButton_10.setMinimumSize(QSize(142, 0))
         self.pushButton_10.setStyleSheet(u"QPushButton {\n"
 " font: bold;\n"
@@ -890,7 +891,7 @@ class Ui_MainWindow(object):
 "")
         self.pushButton_12 = QPushButton(self.centralwidget)
         self.pushButton_12.setObjectName(u"pushButton_12")
-        self.pushButton_12.setGeometry(QRect(220, 630, 142, 45))
+        self.pushButton_12.setGeometry(QRect(220, 600, 142, 45))
         self.pushButton_12.setMinimumSize(QSize(142, 0))
         self.pushButton_12.setStyleSheet(u"QPushButton {\n"
 " font: bold;\n"
@@ -933,7 +934,7 @@ class Ui_MainWindow(object):
         self.comboBox.addItem("")
         self.comboBox.addItem("")
         self.comboBox.setObjectName(u"comboBox")
-        self.comboBox.setGeometry(QRect(220, 750, 141, 45))
+        self.comboBox.setGeometry(QRect(220, 720, 141, 45))
         self.comboBox.setStyleSheet(u"font: bold;\n"
 " font-size:12px;\n"
 " line-height:1.2;\n"
@@ -947,7 +948,7 @@ class Ui_MainWindow(object):
 "  border-radius: 10px;")
         self.pushButton_13 = QPushButton(self.centralwidget)
         self.pushButton_13.setObjectName(u"pushButton_13")
-        self.pushButton_13.setGeometry(QRect(220, 450, 142, 45))
+        self.pushButton_13.setGeometry(QRect(220, 420, 142, 45))
         self.pushButton_13.setMinimumSize(QSize(142, 0))
         self.pushButton_13.setStyleSheet(u"QPushButton {\n"
 " font: bold;\n"
@@ -982,7 +983,7 @@ class Ui_MainWindow(object):
 "")
         self.pushButton_14 = QPushButton(self.centralwidget)
         self.pushButton_14.setObjectName(u"pushButton_14")
-        self.pushButton_14.setGeometry(QRect(219, 400, 142, 45))
+        self.pushButton_14.setGeometry(QRect(219, 370, 142, 45))
         self.pushButton_14.setMinimumSize(QSize(142, 0))
         self.pushButton_14.setStyleSheet(u"QPushButton {\n"
 " font: bold;\n"
@@ -1017,7 +1018,7 @@ class Ui_MainWindow(object):
 "")
         self.pushButton_15 = QPushButton(self.centralwidget)
         self.pushButton_15.setObjectName(u"pushButton_15")
-        self.pushButton_15.setGeometry(QRect(220, 510, 142, 45))
+        self.pushButton_15.setGeometry(QRect(220, 480, 142, 45))
         self.pushButton_15.setMinimumSize(QSize(142, 0))
         self.pushButton_15.setStyleSheet(u"QPushButton {\n"
 " font: bold;\n"
@@ -1052,7 +1053,7 @@ class Ui_MainWindow(object):
 "")
         self.pushButton_16 = QPushButton(self.centralwidget)
         self.pushButton_16.setObjectName(u"pushButton_16")
-        self.pushButton_16.setGeometry(QRect(220, 570, 142, 45))
+        self.pushButton_16.setGeometry(QRect(220, 540, 142, 45))
         self.pushButton_16.setMinimumSize(QSize(142, 0))
         self.pushButton_16.setStyleSheet(u"QPushButton {\n"
 " font: bold;\n"
@@ -1087,7 +1088,7 @@ class Ui_MainWindow(object):
 "")
         self.pushButton = QPushButton(self.centralwidget)
         self.pushButton.setObjectName(u"pushButton")
-        self.pushButton.setGeometry(QRect(10, 160, 201, 45))
+        self.pushButton.setGeometry(QRect(10, 130, 201, 45))
         self.pushButton.setAutoFillBackground(False)
         self.pushButton.setStyleSheet(u"QPushButton {\n"
 " font: bold;\n"
@@ -1120,7 +1121,7 @@ class Ui_MainWindow(object):
         self.pushButton.setAutoDefault(True)
         self.pushButton_2 = QPushButton(self.centralwidget)
         self.pushButton_2.setObjectName(u"pushButton_2")
-        self.pushButton_2.setGeometry(QRect(10, 630, 201, 45))
+        self.pushButton_2.setGeometry(QRect(10, 600, 201, 45))
         self.pushButton_2.setStyleSheet(u"QPushButton {\n"
 " font: bold;\n"
 " font-size:12px;\n"
@@ -1150,7 +1151,7 @@ class Ui_MainWindow(object):
 "")
         self.pushButton_3 = QPushButton(self.centralwidget)
         self.pushButton_3.setObjectName(u"pushButton_3")
-        self.pushButton_3.setGeometry(QRect(10, 400, 201, 45))
+        self.pushButton_3.setGeometry(QRect(10, 370, 201, 45))
         self.pushButton_3.setStyleSheet(u"QPushButton {\n"
 " font: bold;\n"
 " font-size:12px;\n"
@@ -1180,7 +1181,7 @@ class Ui_MainWindow(object):
 "")
         self.pushButton_5 = QPushButton(self.centralwidget)
         self.pushButton_5.setObjectName(u"pushButton_5")
-        self.pushButton_5.setGeometry(QRect(10, 510, 201, 45))
+        self.pushButton_5.setGeometry(QRect(10, 480, 201, 45))
         self.pushButton_5.setStyleSheet(u"QPushButton {\n"
 " font: bold;\n"
 " font-size:12px;\n"
@@ -1210,14 +1211,14 @@ class Ui_MainWindow(object):
 "")
         self.label_5 = QLabel(self.centralwidget)
         self.label_5.setObjectName(u"label_5")
-        self.label_5.setGeometry(QRect(330, 510, 21, 21))
+        self.label_5.setGeometry(QRect(330, 480, 21, 21))
         self.label_5.setStyleSheet(u"image: url(img/Standar/NO_image.png);\n"
 "  background-color: rgb(80, 80, 150);\n"
 "")
         self.label_5.setScaledContents(True)
         self.label_6 = QLabel(self.centralwidget)
         self.label_6.setObjectName(u"label_6")
-        self.label_6.setGeometry(QRect(330, 400, 21, 20))
+        self.label_6.setGeometry(QRect(330, 370, 21, 20))
         self.label_6.setStyleSheet(u"image: url(img/Standar/NO_image.png);\n"
 "  background-color: rgb(80, 80, 150);\n"
 "\n"
@@ -1225,7 +1226,7 @@ class Ui_MainWindow(object):
         self.label_6.setScaledContents(True)
         self.label_7 = QLabel(self.centralwidget)
         self.label_7.setObjectName(u"label_7")
-        self.label_7.setGeometry(QRect(330, 630, 21, 20))
+        self.label_7.setGeometry(QRect(330, 600, 21, 20))
         self.label_7.setStyleSheet(u"image: url(img/Standar/NO_image.png);\n"
 "  background-color: rgb(80, 80, 150);\n"
 "border-radius: 20px;\n"
@@ -1233,7 +1234,7 @@ class Ui_MainWindow(object):
         self.label_7.setScaledContents(True)
         self.pushButton_11 = QPushButton(self.centralwidget)
         self.pushButton_11.setObjectName(u"pushButton_11")
-        self.pushButton_11.setGeometry(QRect(10, 280, 201, 45))
+        self.pushButton_11.setGeometry(QRect(10, 250, 201, 45))
         self.pushButton_11.setStyleSheet(u"QPushButton {\n"
 " font: bold;\n"
 " font-size:12px;\n"
@@ -1263,7 +1264,7 @@ class Ui_MainWindow(object):
 "")
         self.pushButton_17 = QPushButton(self.centralwidget)
         self.pushButton_17.setObjectName(u"pushButton_17")
-        self.pushButton_17.setGeometry(QRect(220, 280, 142, 45))
+        self.pushButton_17.setGeometry(QRect(220, 250, 142, 45))
         self.pushButton_17.setMinimumSize(QSize(142, 0))
         self.pushButton_17.setStyleSheet(u"QPushButton {\n"
 " font: bold;\n"
@@ -1298,14 +1299,14 @@ class Ui_MainWindow(object):
 "")
         self.label_8 = QLabel(self.centralwidget)
         self.label_8.setObjectName(u"label_8")
-        self.label_8.setGeometry(QRect(330, 280, 21, 21))
+        self.label_8.setGeometry(QRect(330, 250, 21, 21))
         self.label_8.setStyleSheet(u"image: url(img/Standar/NO_image.png);\n"
 "  background-color: rgb(80, 80, 150);\n"
 "")
         self.label_8.setScaledContents(True)
         self.pushButton_18 = QPushButton(self.centralwidget)
         self.pushButton_18.setObjectName(u"pushButton_18")
-        self.pushButton_18.setGeometry(QRect(220, 340, 142, 45))
+        self.pushButton_18.setGeometry(QRect(220, 310, 142, 45))
         self.pushButton_18.setMinimumSize(QSize(142, 0))
         self.pushButton_18.setStyleSheet(u"QPushButton {\n"
 " font: bold;\n"
@@ -1340,7 +1341,7 @@ class Ui_MainWindow(object):
 "")
         self.pushButton_Edit = QPushButton(self.centralwidget)
         self.pushButton_Edit.setObjectName(u"pushButton_Edit")
-        self.pushButton_Edit.setGeometry(QRect(1260, 0, 111, 111))
+        self.pushButton_Edit.setGeometry(QRect(1270, 0, 111, 111))
         self.pushButton_Edit.setStyleSheet(u"QPushButton {\n"
 "\n"
 "  box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);\n"
@@ -1426,14 +1427,17 @@ class Ui_MainWindow(object):
         self.label_10.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:12pt; font-weight:600;\">Prediction :</span></p></body></html>", None))
         self.label_12.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:12pt; font-weight:600;\">Normal :</span></p></body></html>", None))
         self.predictButton.setText(QCoreApplication.translate("MainWindow", u"Prediction", None))
-        self.ViduoButton.setText(QCoreApplication.translate("MainWindow", u"multi-face\n"
+        self.ViduoButton.setText(QCoreApplication.translate("MainWindow", u"Multi Face\n"
 "", None))
 #if QT_CONFIG(whatsthis)
         self.pushButton_9.setWhatsThis(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:14pt; font-weight:600;\">+</span></p></body></html>", None))
 #endif // QT_CONFIG(whatsthis)
         self.pushButton_9.setText(QCoreApplication.translate("MainWindow", u"About", None))
-        self.label_13.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"left\">Happy </p></body></html>", None))
-        self.ViduoButton_2.setText(QCoreApplication.translate("MainWindow", u" single face\n"
+        self.label_13.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p >\n"
+"\n"
+"Happy\n"
+" </p></body></html>", None))
+        self.ViduoButton_2.setText(QCoreApplication.translate("MainWindow", u" Single Face\n"
 "", None))
 #if QT_CONFIG(whatsthis)
         self.pushButton_10.setWhatsThis(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:14pt; font-weight:600;\">+</span></p></body></html>", None))
@@ -1442,7 +1446,7 @@ class Ui_MainWindow(object):
 #if QT_CONFIG(whatsthis)
         self.pushButton_12.setWhatsThis(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:14pt; font-weight:600;\">+</span></p></body></html>", None))
 #endif // QT_CONFIG(whatsthis)
-        self.pushButton_12.setText(QCoreApplication.translate("MainWindow", u"ADD", None))
+        self.pushButton_12.setText(QCoreApplication.translate("MainWindow", u"Add", None))
         self.comboBox.setItemText(0, QCoreApplication.translate("MainWindow", u"Mood !", None))
         self.comboBox.setItemText(1, QCoreApplication.translate("MainWindow", u"Sad", None))
         self.comboBox.setItemText(2, QCoreApplication.translate("MainWindow", u"Happy", None))
@@ -1462,30 +1466,30 @@ class Ui_MainWindow(object):
 #if QT_CONFIG(whatsthis)
         self.pushButton_14.setWhatsThis(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:14pt; font-weight:600;\">+</span></p></body></html>", None))
 #endif // QT_CONFIG(whatsthis)
-        self.pushButton_14.setText(QCoreApplication.translate("MainWindow", u"ADD", None))
+        self.pushButton_14.setText(QCoreApplication.translate("MainWindow", u"Add", None))
 #if QT_CONFIG(whatsthis)
         self.pushButton_15.setWhatsThis(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:14pt; font-weight:600;\">+</span></p></body></html>", None))
 #endif // QT_CONFIG(whatsthis)
-        self.pushButton_15.setText(QCoreApplication.translate("MainWindow", u"ADD", None))
+        self.pushButton_15.setText(QCoreApplication.translate("MainWindow", u"Add", None))
 #if QT_CONFIG(whatsthis)
         self.pushButton_16.setWhatsThis(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:14pt; font-weight:600;\">+</span></p></body></html>", None))
 #endif // QT_CONFIG(whatsthis)
         self.pushButton_16.setText(QCoreApplication.translate("MainWindow", u"prediction ", None))
         self.pushButton.setText(QCoreApplication.translate("MainWindow", u"Live Video Streaming", None))
-        self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"predict Notification", None))
-        self.pushButton_3.setText(QCoreApplication.translate("MainWindow", u"predict  Video", None))
-        self.pushButton_5.setText(QCoreApplication.translate("MainWindow", u"predict folder", None))
+        self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"Predict With Notification", None))
+        self.pushButton_3.setText(QCoreApplication.translate("MainWindow", u"Predict  Video", None))
+        self.pushButton_5.setText(QCoreApplication.translate("MainWindow", u"Predict Folder", None))
         self.label_5.setText("")
         self.label_6.setText("")
         self.label_7.setText("")
 #if QT_CONFIG(whatsthis)
         self.pushButton_11.setWhatsThis(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:14pt; font-weight:600;\">+</span></p></body></html>", None))
 #endif // QT_CONFIG(whatsthis)
-        self.pushButton_11.setText(QCoreApplication.translate("MainWindow", u"predict and print", None))
+        self.pushButton_11.setText(QCoreApplication.translate("MainWindow", u"Print The Prediction  ", None))
 #if QT_CONFIG(whatsthis)
         self.pushButton_17.setWhatsThis(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:14pt; font-weight:600;\">+</span></p></body></html>", None))
 #endif // QT_CONFIG(whatsthis)
-        self.pushButton_17.setText(QCoreApplication.translate("MainWindow", u"ADD", None))
+        self.pushButton_17.setText(QCoreApplication.translate("MainWindow", u"Add", None))
         self.label_8.setText("")
 #if QT_CONFIG(whatsthis)
         self.pushButton_18.setWhatsThis(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:14pt; font-weight:600;\">+</span></p></body></html>", None))

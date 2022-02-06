@@ -17,8 +17,7 @@ def EmotionStream_one_face():
     # loading models
     face_detection = cv2.CascadeClassifier(detection_model_path)
     emotion_classifier = load_model(emotion_model_path, compile=False)
-    EMOTIONS = ["angry" ,"disgust","scared", "happy", "sad", "surprised",
-    "neutral"]
+    EMOTIONS = ["angry" ,"disgust","scared", "happy", "neutral", "sad","surprised"]
 
 
     # starting video streaming

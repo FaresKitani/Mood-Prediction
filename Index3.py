@@ -27,13 +27,9 @@ import sqlite3
 #notification 
 from win10toast import ToastNotifier
 
-
-#MainUI, _ = loadUiType(path.join(path.dirname(__file__), "Main_App_2.ui"))
-#logUI, _ = loadUiType(path.join(path.dirname(__file__), "login.ui"))
 editUI, _ = loadUiType(path.join(path.dirname(__file__), "Edit.ui"))
 
 
-######################################### valditon and timer to label
 
 
 class Main2(QMainWindow, editUI):
@@ -42,9 +38,9 @@ class Main2(QMainWindow, editUI):
     global img
     img= "img/user-grean.png"
     global my_id
-    my_id=15
+    my_id=12
     global new_data
-    new_data="F@res"
+    new_data="mo3a"
 
 
     def __init__(self, parent=None):
@@ -125,8 +121,8 @@ class Main2(QMainWindow, editUI):
                 self.label_2.hide()
               
             except sqlite3.Error as er:
-                    print(f"Error Reading Date {er}")
-                    self.label_2.setText(f"Error Reading Date {er}")
+                    print(f"Error Reading Date")
+                    self.label_2.setText(f"Error Reading Date")
                     self.label_2.show()
 
             finally:
@@ -222,7 +218,7 @@ class Main2(QMainWindow, editUI):
                                                     
                     
                     Notifier = ToastNotifier()
-                    Notifier.show_toast(f" Prediction Mood!" , "you are Create a new account :"+user_name,
+                    Notifier.show_toast(f" Prediction Mood!" , "you are Edit ypur account :"+user_name,
                     icon_path="img\Standar\mood_icon.ico" ,duration=5,threaded=True)
                     self.label_2.hide()
                   

@@ -109,17 +109,19 @@ class Main(QMainWindow, logUI):
                 self.w.show()
                 self.showMinimized()
 
-                Notifier = ToastNotifier()
-                Notifier.show_toast(" Prediction Mood!" , " logiN in your account ",
-                icon_path="img\Standar\mood_icon.ico" ,duration=5,threaded=True)
+                #Notifier = ToastNotifier()
+                #Notifier.show_toast(" Prediction Mood!" , " logiN in your account ",
+                #icon_path="img\Standar\mood_icon.ico" ,duration=5,threaded=True)
                 
                 self.label_2.hide()
+                self.close()
+
 
                 print("hi11")
             else:
-                Notifier = ToastNotifier()
-                Notifier.show_toast(" Prediction Mood!" , " Oops! ,Username Not Found. ",
-                icon_path="img\Standar\mood_icon.ico" ,duration=5,threaded=True)
+                #Notifier = ToastNotifier()
+                #Notifier.show_toast(" Prediction Mood!" , " Oops! ,Username Not Found. ",
+                #icon_path="img\Standar\mood_icon.ico" ,duration=5,threaded=True)
                 self.label_2.show()
 
         except sqlite3.Error as er:
@@ -141,15 +143,15 @@ class Main(QMainWindow, logUI):
 
     def sing_go(self):
 
-        Notifier = ToastNotifier()
-        Notifier.show_toast(" Prediction Mood!" , " Create a new account ",
-        icon_path="img\Standar\mood_icon.ico" ,duration=5,threaded=True)
+        #Notifier = ToastNotifier()
+        #Notifier.show_toast(" Prediction Mood!" , " Create a new account ",
+        #icon_path="img\Standar\mood_icon.ico" ,duration=5,threaded=True)
 
         self.w2 = MS() 
         #self.w.setStyleSheet(style())
         self.w2.show()
         self.showMinimized()
-
+    
         self.label_2.hide()
 
         print("hi11")

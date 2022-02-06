@@ -28,12 +28,9 @@ import sqlite3
 from win10toast import ToastNotifier
 
 
-#MainUI, _ = loadUiType(path.join(path.dirname(__file__), "Main_App_2.ui"))
-#logUI, _ = loadUiType(path.join(path.dirname(__file__), "login.ui"))
+
 sinUI, _ = loadUiType(path.join(path.dirname(__file__), "sing.ui"))
 
-
-######################################### valditon and timer to label
 
 
 class Main2(QMainWindow, sinUI):
@@ -181,7 +178,7 @@ class Main2(QMainWindow, sinUI):
                     Notifier.show_toast(f" Prediction Mood!" , "you are Create a new account :"+user_name,
                     icon_path="img\Standar\mood_icon.ico" ,duration=5,threaded=True)
                     
-                    
+                    self.close()
                 except sqlite3.Error as er:
                     print(f"Error Reading Date {er}")
                     self.label_2.setText(f"Error Reading Date {er}")

@@ -7,11 +7,11 @@
     <x>0</x>
     <y>0</y>
     <width>971</width>
-    <height>539</height>
+    <height>530</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Sing up</string>
   </property>
   <property name="styleSheet">
    <string notr="true">QWidget
@@ -305,10 +305,40 @@ QLineEdit:focus{
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true"/>
+     <string notr="true">QPushButton {
+ font: bold;
+ font-size:12px;
+ line-height:1.2;
+  color: #f8f9fa;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(0,102,0);
+  border-radius: 10px;
+  box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);
+  transition: all 0.4s;
+   background-image: url(img/Standar/ddd1.png);
+    background-repeat: no-repeat;
+    background-position: left; 
+  
+	
+}
+
+QPushButton:hover {
+    background-color: rgb(0,153,51);
+  box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
+ 
+}
+
+QPushButton:pressed {
+    background-color: rgb(51,153,0);
+}
+</string>
     </property>
     <property name="text">
-     <string>Save</string>
+     <string>Create</string>
     </property>
    </widget>
    <widget class="QLabel" name="label">
@@ -382,37 +412,7 @@ padding: 2px;</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">QPushButton {
- font: bold;
- font-size:12px;
- line-height:1.2;
-  color: #f8f9fa;
-  justify-content: center;
-  align-items: center;
-  padding: 0 20px;
-  width: 100%;
-  height: 50px;
-  background-color: rgb(0,102,0);
-  border-radius: 10px;
-  box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);
-  transition: all 0.4s;
-   background-image: url(img/Standar/ddd1.png);
-    background-repeat: no-repeat;
-    background-position: left; 
-  
-	
-}
-
-QPushButton:hover {
-    background-color: rgb(0,153,51);
-  box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
- 
-}
-
-QPushButton:pressed {
-    background-color: rgb(51,153,0);
-}
-</string>
+     <string notr="true"/>
     </property>
     <property name="text">
      <string>Add</string>
@@ -428,33 +428,7 @@ QPushButton:pressed {
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">QPushButton {
- font: bold;
- font-size:12px;
- line-height:1.2;
-  color: #f8f9fa;
-  justify-content: center;
-  align-items: center;
-  padding: 0 20px;
-  width: 100%;
-  height: 50px;
-  background-color: rgb(110, 20, 20);
-  border-radius: 10px;
-  box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);
-  transition: all 0.4s;
-	
-}
-
-QPushButton:hover {
-    background-color: rgb(74, 20, 20);
-  box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
- 
-}
-
-QPushButton:pressed {
-    background-color: rgb(110, 20, 20);
-}
-</string>
+     <string notr="true"/>
     </property>
     <property name="text">
      <string>Delete</string>

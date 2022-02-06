@@ -1,9 +1,4 @@
-#connetion with DB
-
-#connetion with QT_Disinger
-
 #Start codeing
-
 
 # import for QT5 & QT_designer
 
@@ -12,8 +7,6 @@ from PyQt5.QtWidgets import *
 from PyQt5.QtCore import *
 #from PyQt5.QtGui import QPixmap
 from PyQt5.QtDesigner import *
-
-
 
 from PyQt5.uic import loadUiType
 
@@ -32,7 +25,7 @@ from win10toast import ToastNotifier
 from ViduoEmotion import EmotionStream
 from Mood_imgs import EmotionStream_one_face
 from Emotion import Emotion_img
-from TestEmotionDetector import TestEmotion
+from TestEmotionDetector import TestEmotion,TestVideoEmotion
 from Emotion_print import print_Emotion
 
 # import for DB_SQLite
@@ -61,10 +54,6 @@ class Main(QMainWindow, MainUI):
         super(Main, self).__init__(parent)
         QMainWindow.__init__(self)
         self.setupUi(self)
-
-        
-        
-        
 
         #hidden button  
         self.ViduoButton_2.hide()
@@ -134,7 +123,7 @@ class Main(QMainWindow, MainUI):
         L1 =QPixmap('img\Standar\Emoji_icon_without_Mouth.png')
         L2 =QPixmap('img\Standar\Smiling_Emoji.png')
 
-        
+        self.label_13.setText("Happy")
         self.labelimg.setPixmap(L1)
         self.labelimg2.setPixmap(L2)
 
@@ -145,6 +134,7 @@ class Main(QMainWindow, MainUI):
         #img =self.labelimg.getPixmap
         try:
             path_didiction, mood_didiction = TestEmotion(img)
+            #gmood = mood_didiction.split(' ')
             print(path_didiction)
             A2=str(mood_didiction)
             A1 =QPixmap(path_didiction)
@@ -159,15 +149,26 @@ class Main(QMainWindow, MainUI):
 
     def startViduo_but(self):
         try:
+            Notifier = ToastNotifier()
+            Notifier.show_toast(" Prediction Mood!" , " press Q to Exit ",
+            icon_path="img\Standar\mood_icon.ico" ,duration=5,threaded=True)
             EmotionStream()
         except:
-            pass
+            Notifier = ToastNotifier()
+            Notifier.show_toast(" Prediction Mood!" , " Oops! , Error . ",
+            icon_path="img\Standar\mood_icon.ico" ,duration=5,threaded=True)            
 
     def startViduoOneFace_but(self):
         try:
+            Notifier = ToastNotifier()
+            Notifier.show_toast(" Prediction Mood!" , " press Q to Exit ",
+            icon_path="img\Standar\mood_icon.ico" ,duration=5,threaded=True)
             EmotionStream_one_face()
+
         except:
-            pass
+            Notifier = ToastNotifier()
+            Notifier.show_toast(" Prediction Mood!" , " Oops! , Error . ",
+            icon_path="img\Standar\mood_icon.ico" ,duration=5,threaded=True)
 
  
 
@@ -179,7 +180,6 @@ class Main(QMainWindow, MainUI):
         self.labelimg.setPixmap(qpimg)
         global img
         img = save_location[0]
-        #Main.MyDB(self)
 
     def video_add(self):
         try:
@@ -214,13 +214,13 @@ class Main(QMainWindow, MainUI):
 
     def folder_add(self):
         try:
-            save_location = QFileDialog.getSaveFileName(self , caption="Save as" , directory="." , filter="All Files(*.*)")
+            #save_location = QFileDialog.getSaveFileName(self , caption="Save as" , directory="." , filter="All Files(*.*)")
             #print(save_location[0])
 
-            qpimg = QPixmap(str(save_location[0]))
-            self.labelimg.setPixmap(qpimg)
-            global img
-            img = save_location[0]
+            #qpimg = QPixmap(str(save_location[0]))
+            #self.labelimg.setPixmap(qpimg)
+            #global img
+            #img = save_location[0]
 
             yas_img = "img\Standar\yes_img.png"
             self.label_5.setPixmap(QPixmap(yas_img))
@@ -233,7 +233,7 @@ class Main(QMainWindow, MainUI):
             #print(save_location[0])
 
             qpimg = QPixmap(str(save_location[0]))
-            self.labelimg.setPixmap(qpimg)
+            #self.labelimg.setPixmap(qpimg)
             global img
             img = save_location[0]
 
@@ -250,11 +250,14 @@ class Main(QMainWindow, MainUI):
 
         try:
             global img_video
-            TestEmotion(img_video)
+            Notifier = ToastNotifier()
+            Notifier.show_toast(" Prediction Mood!" , " press Q to Exit and A to move ",
+            icon_path="img\Standar\mood_icon.ico" ,duration=5,threaded=True)
+            TestVideoEmotion(img_video)
             #img_video = ""
             
             No_img = "img\Standar\no_image.png"
-            #self.label_6.setPixmap(QPixmap(No_img))
+            self.label_6.setPixmap(QPixmap(No_img))
         except:
             pass
 
@@ -271,9 +274,16 @@ class Main(QMainWindow, MainUI):
             Notifier.show_toast(" Prediction Mood!" , " The Prediction and print image is done. ",
             icon_path="img\Standar\mood_icon.ico" ,duration=5,threaded=True)
         except:
-            pass
+            Notifier = ToastNotifier()
+            Notifier.show_toast(" Prediction Mood!" , " Oops! , Error . ",
+            icon_path="img\Standar\mood_icon.ico" ,duration=5,threaded=True)
         
     def folder_pridict(self):
+        No_img = "img\Standar\no_image.png"
+        self.label_5.setPixmap(QPixmap(No_img))
+        Notifier = ToastNotifier()
+        Notifier.show_toast(" Prediction Mood!" , " Done. ",
+        icon_path="img\Standar\mood_icon.ico" ,duration=5,threaded=True)
         try:
             pass
 
@@ -282,9 +292,37 @@ class Main(QMainWindow, MainUI):
 
     
     def Notification_pridict(self):
-        try:
-            pass
 
+        global img
+
+
+        try:
+            path_didiction, mood_didiction = TestEmotion(img)
+
+            Tcomp = self.comboBox.currentText() 
+            gmood = mood_didiction.split(' ')
+            asd = True
+            for item in gmood:
+                if(Tcomp=='Mood !'):
+                    Notifier = ToastNotifier()
+                    Notifier.show_toast(" Prediction Mood!" , " Please Choose  Mood ",
+                    icon_path="img\Standar\mood_icon.ico" ,duration=5,threaded=True)
+                    asd = False
+                elif(Tcomp == item):
+                    Notifier = ToastNotifier()
+                    Notifier.show_toast(" Prediction Mood!" , " Yes , Correct Mood ",
+                    icon_path="img\Standar\mood_icon.ico" ,duration=5,threaded=True)
+                    asd = False
+                    #print(path_didiction+ "\n"+Tcomp)
+                    #A2=str(mood_didiction)
+                    #A1 =QPixmap(path_didiction)
+                    #self.label_13.setText(A2)
+                    #self.labelimg2.setPixmap(A1)
+            if(asd):
+                Notifier = ToastNotifier()
+                Notifier.show_toast(" Prediction Mood!" , "No , don't Same Mood ",
+                icon_path="img\Standar\mood_icon.ico" ,duration=5,threaded=True)
+                                        
         except:
             pass
 
@@ -296,6 +334,7 @@ class Main(QMainWindow, MainUI):
         #self.w.setStyleSheet(style())
         self.Aui.show()
         self.showMinimized()
+        #self.close()
         print("About_UI")
 
 
@@ -375,6 +414,8 @@ class Main(QMainWindow, MainUI):
             self.pushButton_12.hide()
             self.pushButton_10.hide()
             self.label_7.hide()
+            No_img = "img\Standar\no_image.png"
+            self.label_7.setPixmap(QPixmap(No_img))
             self.hidden2 = True
 
     hidden3 = True
@@ -422,15 +463,6 @@ class Main(QMainWindow, MainUI):
 
 
     ############################################
-
-
-
-
-
-
-
-
-
 
 
 
